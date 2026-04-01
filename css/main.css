@@ -382,6 +382,11 @@ section {
   margin-bottom: 6px;
 }
 
+.stat-empty {
+  opacity: 0.3;
+  font-size: 1.5rem !important;
+}
+
 .stat-box .label {
   font-size: 11px;
   letter-spacing: 2px;
@@ -419,6 +424,10 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
+}
+
+.services-grid-4 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .service-card {
