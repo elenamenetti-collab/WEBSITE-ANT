@@ -73,6 +73,11 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 0;
+}
+
+#navbar .logo {
+  margin-left: -10px;
 }
 
 #navbar .logo img {
