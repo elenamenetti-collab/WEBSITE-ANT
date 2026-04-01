@@ -185,6 +185,12 @@ ul { list-style: none; }
   padding: 0 20px;
 }
 
+.hero-logo {
+  height: 90px;
+  width: auto;
+  margin: 0 auto 30px;
+}
+
 .hero-content h1 {
   font-size: clamp(2.2rem, 5vw, 4rem);
   color: var(--white);
