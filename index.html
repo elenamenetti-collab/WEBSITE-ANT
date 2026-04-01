@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ant Capital</title>
+  <meta name="description" content="Ant Capital Partners — Investment Banking, M&A Advisory, Milano" />
+  <link rel="icon" href="images/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- ========================
+     NAVBAR
+     ======================== -->
+<header id="navbar">
+  <div class="container nav-inner">
+
+    <a href="#hero" class="logo">
+      <img src="images/logo-white.png" alt="Ant Capital" />
+    </a>
+
+    <nav id="main-nav">
+      <a href="#chi-siamo"   data-it="Chi Siamo"     data-en="About Us">Chi Siamo</a>
+      <a href="#servizi"     data-it="Servizi"        data-en="Services">Servizi</a>
+      <a href="#team"        data-it="Team"           data-en="Team">Team</a>
+      <a href="#news"        data-it="News"           data-en="News">News</a>
+      <a href="#contatti"    data-it="Contatti"       data-en="Contact">Contatti</a>
+
+      <div class="lang-switcher">
+        <button id="btn-it" class="active" onclick="setLang('it')">IT</button>
+        <span>/</span>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+
+  </div>
+</header>
+
+<!-- ========================
+     HERO
+     ======================== -->
+<section id="hero">
+  <div class="hero-content">
+    <p class="tagline" data-it="Investment Banking · M&A Advisory" data-en="Investment Banking · M&A Advisory">
+      Investment Banking · M&A Advisory
+    </p>
+    <h1>Ant Capital</h1>
+    <p class="subtitle"
+       data-it="Consulenza finanziaria d'eccellenza per imprese e investitori. Milano, Italia."
+       data-en="Excellence in financial advisory for companies and investors. Milan, Italy.">
+      Consulenza finanziaria d'eccellenza per imprese e investitori. Milano, Italia.
+    </p>
+    <a href="#chi-siamo" class="btn"
+       data-it="Scopri di più" data-en="Discover more">Scopri di più</a>
+  </div>
+  <div class="scroll-down" onclick="document.getElementById('chi-siamo').scrollIntoView({behavior:'smooth'})"></div>
+</section>
+
+<!-- ========================
+     CHI SIAMO / ABOUT
+     ======================== -->
+<section id="chi-siamo">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-it="Chi Siamo" data-en="About Us">Chi Siamo</h2>
+      <div class="gold-line"></div>
+      <p data-it="Una boutique indipendente di investment banking con sede a Milano."
+         data-en="An independent investment banking boutique based in Milan.">
+        Una boutique indipendente di investment banking con sede a Milano.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <div class="gold-line"></div>
+        <p data-it="Ant Capital è una boutique indipendente specializzata in operazioni di Mergers & Acquisitions, capital raising e advisory strategico per aziende mid-market italiane e internazionali."
+           data-en="Ant Capital is an independent boutique specialised in Mergers & Acquisitions, capital raising and strategic advisory for Italian and international mid-market companies.">
+          Ant Capital è una boutique indipendente specializzata in operazioni di Mergers & Acquisitions, capital raising e advisory strategico per aziende mid-market italiane e internazionali.
+        </p>
+        <p data-it="Il nostro approccio si fonda su un'analisi rigorosa, una profonda conoscenza dei mercati finanziari e una rete di relazioni consolidate a livello europeo e globale."
+           data-en="Our approach is based on rigorous analysis, deep knowledge of financial markets and a well-established network of relationships at the European and global level.">
+          Il nostro approccio si fonda su un'analisi rigorosa, una profonda conoscenza dei mercati finanziari e una rete di relazioni consolidate a livello europeo e globale.
+        </p>
+        <p data-it="Operiamo con massima riservatezza, mettendo al centro gli obiettivi strategici dei nostri clienti."
+           data-en="We operate with the utmost confidentiality, placing our clients' strategic objectives at the centre of everything we do.">
+          Operiamo con massima riservatezza, mettendo al centro gli obiettivi strategici dei nostri clienti.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <span class="number">20+</span>
+            <span class="label" data-it="Anni di esperienza" data-en="Years of experience">Anni di esperienza</span>
+          </div>
+          <div class="stat-box">
+            <span class="number">100+</span>
+            <span class="label" data-it="Transazioni completate" data-en="Completed transactions">Transazioni completate</span>
+          </div>
+          <div class="stat-box">
+            <span class="number">€ 2B+</span>
+            <span class="label" data-it="Valore transato" data-en="Transaction value">Valore transato</span>
+          </div>
+          <div class="stat-box">
+            <span class="number">15+</span>
+            <span class="label" data-it="Paesi coperti" data-en="Countries covered">Paesi coperti</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-image fade-in">
+        <img src="uploads/uploads/2019/03/ant_capital_vista_milano.jpg" alt="Ant Capital Milano" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     SERVIZI / SERVICES
+     ======================== -->
+<section id="servizi" class="bg-navy">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-it="Servizi" data-en="Services">Servizi</h2>
+      <div class="gold-line"></div>
+      <p data-it="Soluzioni finanziarie su misura per ogni fase del ciclo di vita dell'impresa."
+         data-en="Tailored financial solutions for every stage of the business lifecycle.">
+        Soluzioni finanziarie su misura per ogni fase del ciclo di vita dell'impresa.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+        <h3 data-it="M&A Advisory" data-en="M&A Advisory">M&A Advisory</h3>
+        <p data-it="Supporto completo nelle operazioni di fusione e acquisizione: dalla ricerca della controparte alla strutturazione dell'operazione e alla negoziazione finale."
+           data-en="Full support in mergers and acquisitions: from counterparty search to deal structuring and final negotiation.">
+          Supporto completo nelle operazioni di fusione e acquisizione: dalla ricerca della controparte alla strutturazione dell'operazione e alla negoziazione finale.
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3 data-it="Capital Raising" data-en="Capital Raising">Capital Raising</h3>
+        <p data-it="Accesso ai mercati dei capitali per operazioni di equity e debt: fondi di private equity, family office, investitori istituzionali."
+           data-en="Access to capital markets for equity and debt transactions: private equity funds, family offices, institutional investors.">
+          Accesso ai mercati dei capitali per operazioni di equity e debt: fondi di private equity, family office, investitori istituzionali.
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <h3 data-it="Valutazioni d'Azienda" data-en="Business Valuation">Valutazioni d'Azienda</h3>
+        <p data-it="Analisi e valutazione aziendale per operazioni straordinarie, contenziosi, riorganizzazioni societarie e operazioni di buy-out."
+           data-en="Business analysis and valuation for extraordinary transactions, litigation, corporate reorganisations and buy-out transactions.">
+          Analisi e valutazione aziendale per operazioni straordinarie, contenziosi, riorganizzazioni societarie e operazioni di buy-out.
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h3 data-it="Debt Advisory" data-en="Debt Advisory">Debt Advisory</h3>
+        <p data-it="Strutturazione e ottimizzazione del debito finanziario: finanziamenti bancari, minibond, finanza alternativa e ristrutturazioni."
+           data-en="Structuring and optimisation of financial debt: bank financing, minibonds, alternative finance and restructuring.">
+          Strutturazione e ottimizzazione del debito finanziario: finanziamenti bancari, minibond, finanza alternativa e ristrutturazioni.
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+        <h3 data-it="Cross-Border" data-en="Cross-Border">Cross-Border</h3>
+        <p data-it="Operazioni internazionali con una rete di partner qualificati in Europa, Nord America e Asia. Accesso diretto a mercati globali."
+           data-en="International transactions through a qualified network of partners across Europe, North America and Asia. Direct access to global markets.">
+          Operazioni internazionali con una rete di partner qualificati in Europa, Nord America e Asia. Accesso diretto a mercati globali.
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 data-it="Strategic Advisory" data-en="Strategic Advisory">Strategic Advisory</h3>
+        <p data-it="Consulenza strategica per imprenditori e CdA: piani industriali, analisi competitive, scenario planning e supporto decisionale."
+           data-en="Strategic consulting for entrepreneurs and boards: business plans, competitive analysis, scenario planning and decision support.">
+          Consulenza strategica per imprenditori e CdA: piani industriali, analisi competitive, scenario planning e supporto decisionale.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     TEAM
+     ======================== -->
+<section id="team">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-it="Il Nostro Team" data-en="Our Team">Il Nostro Team</h2>
+      <div class="gold-line"></div>
+      <p data-it="Professionisti con esperienza pluriennale nei mercati finanziari internazionali."
+         data-en="Professionals with extensive experience in international financial markets.">
+        Professionisti con esperienza pluriennale nei mercati finanziari internazionali.
+      </p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card fade-in">
+        <div class="photo-placeholder"><span>AC</span></div>
+        <h4 data-it="[Nome Cognome]" data-en="[First Last]">[Nome Cognome]</h4>
+        <p class="role" data-it="Managing Partner" data-en="Managing Partner">Managing Partner</p>
+        <p class="bio" data-it="[Biografia breve del partner da inserire]"
+                       data-en="[Short partner biography to be added]">[Biografia breve da inserire]</p>
+      </div>
+
+      <div class="team-card fade-in">
+        <div class="photo-placeholder"><span>AC</span></div>
+        <h4 data-it="[Nome Cognome]" data-en="[First Last]">[Nome Cognome]</h4>
+        <p class="role" data-it="Partner" data-en="Partner">Partner</p>
+        <p class="bio" data-it="[Biografia breve del partner da inserire]"
+                       data-en="[Short partner biography to be added]">[Biografia breve da inserire]</p>
+      </div>
+
+      <div class="team-card fade-in">
+        <div class="photo-placeholder"><span>AC</span></div>
+        <h4 data-it="[Nome Cognome]" data-en="[First Last]">[Nome Cognome]</h4>
+        <p class="role" data-it="Director" data-en="Director">Director</p>
+        <p class="bio" data-it="[Biografia breve da inserire]"
+                       data-en="[Short biography to be added]">[Biografia breve da inserire]</p>
+      </div>
+
+      <div class="team-card fade-in">
+        <div class="photo-placeholder"><span>AC</span></div>
+        <h4 data-it="[Nome Cognome]" data-en="[First Last]">[Nome Cognome]</h4>
+        <p class="role" data-it="Associate" data-en="Associate">Associate</p>
+        <p class="bio" data-it="[Biografia breve da inserire]"
+                       data-en="[Short biography to be added]">[Biografia breve da inserire]</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     NEWS / COMUNICATI
+     ======================== -->
+<section id="news" class="bg-light">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-it="News & Comunicati" data-en="News & Press Releases">News & Comunicati</h2>
+      <div class="gold-line"></div>
+      <p data-it="Aggiornamenti sulle ultime operazioni e novità di Ant Capital."
+         data-en="Updates on Ant Capital's latest transactions and news.">
+        Aggiornamenti sulle ultime operazioni e novità di Ant Capital.
+      </p>
+    </div>
+
+    <div class="news-grid">
+
+      <div class="news-card fade-in">
+        <div class="news-img-placeholder"></div>
+        <div class="news-body">
+          <p class="date">Aprile 2025</p>
+          <h4 data-it="[Titolo comunicato da inserire]" data-en="[Press release title to be added]">[Titolo comunicato da inserire]</h4>
+          <p data-it="[Testo introduttivo del comunicato stampa da inserire.]"
+             data-en="[Introductory text of the press release to be added.]">[Testo introduttivo da inserire.]</p>
+          <a href="#" class="read-more" data-it="Leggi tutto" data-en="Read more">Leggi tutto</a>
+        </div>
+      </div>
+
+      <div class="news-card fade-in">
+        <div class="news-img-placeholder"></div>
+        <div class="news-body">
+          <p class="date">Marzo 2025</p>
+          <h4 data-it="[Titolo comunicato da inserire]" data-en="[Press release title to be added]">[Titolo comunicato da inserire]</h4>
+          <p data-it="[Testo introduttivo del comunicato stampa da inserire.]"
+             data-en="[Introductory text of the press release to be added.]">[Testo introduttivo da inserire.]</p>
+          <a href="#" class="read-more" data-it="Leggi tutto" data-en="Read more">Leggi tutto</a>
+        </div>
+      </div>
+
+      <div class="news-card fade-in">
+        <div class="news-img-placeholder"></div>
+        <div class="news-body">
+          <p class="date">Gennaio 2025</p>
+          <h4 data-it="[Titolo comunicato da inserire]" data-en="[Press release title to be added]">[Titolo comunicato da inserire]</h4>
+          <p data-it="[Testo introduttivo del comunicato stampa da inserire.]"
+             data-en="[Introductory text of the press release to be added.]">[Testo introduttivo da inserire.]</p>
+          <a href="#" class="read-more" data-it="Leggi tutto" data-en="Read more">Leggi tutto</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     CONTATTI / CONTACT
+     ======================== -->
+<section id="contatti">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-it="Contatti" data-en="Contact Us">Contatti</h2>
+      <div class="gold-line"></div>
+      <p data-it="Siamo a disposizione per qualsiasi richiesta di informazioni o per fissare un incontro."
+         data-en="We are available for any enquiries or to arrange a meeting.">
+        Siamo a disposizione per qualsiasi richiesta di informazioni o per fissare un incontro.
+      </p>
+    </div>
+
+    <div class="contact-grid fade-in">
+
+      <!-- Form -->
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <input type="text" name="name" required
+            data-placeholder-it="Nome e Cognome" data-placeholder-en="Full Name"
+            placeholder="Nome e Cognome" />
+          <input type="email" name="email" required
+            data-placeholder-it="Email" data-placeholder-en="Email"
+            placeholder="Email" />
+        </div>
+        <input type="text" name="subject"
+          data-placeholder-it="Oggetto" data-placeholder-en="Subject"
+          placeholder="Oggetto" />
+        <textarea name="message"
+          data-placeholder-it="Messaggio" data-placeholder-en="Message"
+          placeholder="Messaggio"></textarea>
+        <label class="privacy-check">
+          <input type="checkbox" required />
+          <span data-it="Acconsento al trattamento dei dati personali ai sensi del GDPR e della Privacy Policy di Ant Capital."
+                data-en="I consent to the processing of personal data pursuant to the GDPR and Ant Capital's Privacy Policy.">
+            Acconsento al trattamento dei dati personali ai sensi del GDPR e della Privacy Policy di Ant Capital.
+          </span>
+        </label>
+        <button type="submit" class="btn btn-solid"
+          data-it="Invia messaggio" data-en="Send message">Invia messaggio</button>
+      </form>
+
+      <!-- Info -->
+      <div class="contact-info">
+        <h3 data-it="Dove siamo" data-en="Find us">Dove siamo</h3>
+        <div class="gold-line"></div>
+
+        <div class="contact-block">
+          <p class="label" data-it="Indirizzo" data-en="Address">Indirizzo</p>
+          <p>Via Brisa n. 3<br />20123 Milano (MI)<br />Italy</p>
+        </div>
+
+        <div class="contact-block contact-block-gold">
+          <p class="label" data-it="Telefono" data-en="Phone">Telefono</p>
+          <a href="tel:+390287189690">+39 02 87 189 690</a>
+          <p class="label" style="margin-top:12px;" data-it="Email" data-en="Email">Email</p>
+          <a href="mailto:info@antcapital.it">info@antcapital.it</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Map -->
+    <div class="map-wrapper fade-in">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.2692116600847!2d9.178072215824468!3d45.46438057910103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1539a2bbe63%3A0xe45d63c5b1b557e6!2sVia+Brisa%2C+3%2C+20123+Milano+MI!5e0!3m2!1sit!2sit!4v1550852161797"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+     ======================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <img src="images/logo-white.png" alt="Ant Capital" />
+        <p data-it="Boutique indipendente di investment banking con sede a Milano. Specializzata in M&A, capital raising e advisory strategico."
+           data-en="Independent investment banking boutique based in Milan. Specialised in M&A, capital raising and strategic advisory.">
+          Boutique indipendente di investment banking con sede a Milano.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-it="Navigazione" data-en="Navigation">Navigazione</h5>
+        <ul>
+          <li><a href="#chi-siamo" data-it="Chi Siamo" data-en="About Us">Chi Siamo</a></li>
+          <li><a href="#servizi"   data-it="Servizi"   data-en="Services">Servizi</a></li>
+          <li><a href="#team"      data-it="Team"      data-en="Team">Team</a></li>
+          <li><a href="#news"      data-it="News"      data-en="News">News</a></li>
+          <li><a href="#contatti"  data-it="Contatti"  data-en="Contact">Contatti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-it="Contatti" data-en="Contact">Contatti</h5>
+        <ul>
+          <li><a href="tel:+390287189690">+39 02 87 189 690</a></li>
+          <li><a href="mailto:info@antcapital.it">info@antcapital.it</a></li>
+          <li><a href="#">Via Brisa 3, Milano</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2025 Ant Capital Partners | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+  </div>
+</footer>
+
+<!-- ========================
+     SCRIPTS
+     ======================== -->
+<script>
+  // --- Navbar scroll ---
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // --- Mobile menu ---
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('open');
+  }
+
+  // Close menu on link click
+  document.querySelectorAll('#main-nav a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('main-nav').classList.remove('open');
+    });
+  });
+
+  // --- Language switcher ---
+  let currentLang = 'it';
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+
+    // Toggle button states
+    document.getElementById('btn-it').classList.toggle('active', lang === 'it');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+    // Update all elements with data-it / data-en
+    document.querySelectorAll('[data-it][data-en]').forEach(el => {
+      el.textContent = lang === 'it' ? el.dataset.it : el.dataset.en;
+    });
+
+    // Update placeholders
+    document.querySelectorAll('[data-placeholder-it][data-placeholder-en]').forEach(el => {
+      el.placeholder = lang === 'it' ? el.dataset.placeholderIt : el.dataset.placeholderEn;
+    });
+  }
+
+  // --- Scroll animations ---
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // --- Contact form ---
+  function submitForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type=submit]');
+    btn.textContent = currentLang === 'it' ? 'Messaggio inviato!' : 'Message sent!';
+    btn.style.background = '#031430';
+    btn.style.color = '#d4b768';
+    setTimeout(() => {
+      btn.textContent = currentLang === 'it' ? 'Invia messaggio' : 'Send message';
+      btn.style.background = '';
+      btn.style.color = '';
+      e.target.reset();
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>
