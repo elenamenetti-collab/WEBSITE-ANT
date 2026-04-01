@@ -455,6 +455,121 @@ section {
 }
 
 /* ===========================
+   TRACK RECORD
+   =========================== */
+.tr-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.tr-filter {
+  background: none;
+  border: 1px solid var(--gray);
+  padding: 8px 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #888;
+  transition: all 0.2s;
+}
+
+.tr-filter:hover,
+.tr-filter.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+.tr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tr-card {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tr-card.hidden {
+  display: none;
+}
+
+.tr-card-inner {
+  background: var(--white);
+  padding: 36px 30px;
+  border-left: 3px solid var(--gold);
+  height: 100%;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.tr-card-inner:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+.tr-type {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(212,183,104,0.1);
+  padding: 4px 10px;
+  margin-bottom: 16px;
+}
+
+.tr-card-inner h4 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.tr-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.tr-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--gray);
+  padding-top: 14px;
+}
+
+.tr-sector {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.tr-year {
+  font-family: 'Kayak', sans-serif;
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .tr-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .tr-grid { grid-template-columns: 1fr; }
+}
+
+/* ===========================
    TEAM
    =========================== */
 #team .team-grid {
