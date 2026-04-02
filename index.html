@@ -34,9 +34,9 @@
       <a href="#chi-siamo"    data-it="Chi Siamo"          data-en="About Us">Chi Siamo</a>
       <a href="#servizi"      data-it="Servizi"             data-en="Services">Servizi</a>
       <a href="#track-record" data-it="Track Record"        data-en="Track Record">Track Record</a>
-      <a href="#partnership"  data-it="Partnership"         data-en="Partnerships">Partnership</a>
-      <a href="#news"         data-it="News & Comunicati"   data-en="News & Press">News</a>
-      <a href="#link"         data-it="Link"                data-en="Links">Link</a>
+      <a href="#partnership"  data-it="Partnership"         data-en="Partnerships" style="display:none">Partnership</a>
+      <a href="#news"         data-it="News & Comunicati"   data-en="News & Press" style="display:none">News</a>
+      <a href="#link"         data-it="Link"                data-en="Links" style="display:none">Link</a>
       <a href="#contatti"     data-it="Contatti"            data-en="Contact">Contatti</a>
 
       <div class="lang-switcher">
@@ -122,9 +122,6 @@
         </div>
       </div>
 
-      <div class="about-image fade-in">
-        <img src="uploads/uploads/2019/03/ant_capital_vista_milano.jpg" alt="Ant Capital Milano" />
-      </div>
     </div>
   </div>
 </section>
@@ -227,7 +224,7 @@
 <!-- ========================
      PARTNERSHIP
      ======================== -->
-<section id="partnership">
+<section id="partnership" style="display:none">
   <div class="container">
     <div class="section-header fade-in">
       <h2 data-it="Le Nostre Partnership" data-en="Our Partnerships">Le Nostre Partnership</h2>
@@ -238,39 +235,14 @@
       </p>
     </div>
 
-    <div class="partnership-grid fade-in">
-      <div class="partner-card">
-        <div class="partner-logo-placeholder"><span data-it="[Logo partner]" data-en="[Partner logo]">[Logo]</span></div>
-        <p class="partner-name">[Nome partner]</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-logo-placeholder"><span>[Logo]</span></div>
-        <p class="partner-name">[Nome partner]</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-logo-placeholder"><span>[Logo]</span></div>
-        <p class="partner-name">[Nome partner]</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-logo-placeholder"><span>[Logo]</span></div>
-        <p class="partner-name">[Nome partner]</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-logo-placeholder"><span>[Logo]</span></div>
-        <p class="partner-name">[Nome partner]</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-logo-placeholder"><span>[Logo]</span></div>
-        <p class="partner-name">[Nome partner]</p>
-      </div>
-    </div>
+    <div id="partnership-grid" class="partnership-grid fade-in"></div>
   </div>
 </section>
 
 <!-- ========================
      NEWS & COMUNICATI
      ======================== -->
-<section id="news" class="bg-light">
+<section id="news" class="bg-light" style="display:none">
   <div class="container">
 
     <!-- Articoli di giornale -->
@@ -283,35 +255,7 @@
       </p>
     </div>
 
-    <div class="news-grid fade-in">
-      <div class="news-card">
-        <div class="news-img-placeholder"></div>
-        <div class="news-body">
-          <p class="date news-source">[Testata] · [Data]</p>
-          <h4>[Titolo articolo da inserire]</h4>
-          <p>[Estratto dell'articolo da inserire.]</p>
-          <a href="#" class="read-more" data-it="Leggi l'articolo" data-en="Read article">Leggi l'articolo</a>
-        </div>
-      </div>
-      <div class="news-card">
-        <div class="news-img-placeholder"></div>
-        <div class="news-body">
-          <p class="date news-source">[Testata] · [Data]</p>
-          <h4>[Titolo articolo da inserire]</h4>
-          <p>[Estratto dell'articolo da inserire.]</p>
-          <a href="#" class="read-more" data-it="Leggi l'articolo" data-en="Read article">Leggi l'articolo</a>
-        </div>
-      </div>
-      <div class="news-card">
-        <div class="news-img-placeholder"></div>
-        <div class="news-body">
-          <p class="date news-source">[Testata] · [Data]</p>
-          <h4>[Titolo articolo da inserire]</h4>
-          <p>[Estratto dell'articolo da inserire.]</p>
-          <a href="#" class="read-more" data-it="Leggi l'articolo" data-en="Read article">Leggi l'articolo</a>
-        </div>
-      </div>
-    </div>
+    <div id="rassegna-grid" class="news-grid fade-in"></div>
 
     <!-- Comunicati stampa -->
     <div class="news-subsection fade-in">
@@ -319,32 +263,7 @@
         <h3 data-it="Comunicati Stampa" data-en="Press Releases">Comunicati Stampa</h3>
         <div class="gold-line"></div>
       </div>
-      <div class="news-grid">
-        <div class="news-card">
-          <div class="news-body" style="padding-top:24px;">
-            <p class="date">[Data]</p>
-            <h4>[Titolo comunicato da inserire]</h4>
-            <p>[Testo introduttivo del comunicato stampa da inserire.]</p>
-            <a href="#" class="read-more" data-it="Scarica PDF" data-en="Download PDF">Scarica PDF</a>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-body" style="padding-top:24px;">
-            <p class="date">[Data]</p>
-            <h4>[Titolo comunicato da inserire]</h4>
-            <p>[Testo introduttivo del comunicato stampa da inserire.]</p>
-            <a href="#" class="read-more" data-it="Scarica PDF" data-en="Download PDF">Scarica PDF</a>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-body" style="padding-top:24px;">
-            <p class="date">[Data]</p>
-            <h4>[Titolo comunicato da inserire]</h4>
-            <p>[Testo introduttivo del comunicato stampa da inserire.]</p>
-            <a href="#" class="read-more" data-it="Scarica PDF" data-en="Download PDF">Scarica PDF</a>
-          </div>
-        </div>
-      </div>
+      <div id="comunicati-grid" class="news-grid"></div>
     </div>
 
   </div>
@@ -353,7 +272,7 @@
 <!-- ========================
      LINK
      ======================== -->
-<section id="link">
+<section id="link" style="display:none">
   <div class="container">
     <div class="section-header fade-in">
       <h2 data-it="Link & Media" data-en="Links & Media">Link & Media</h2>
@@ -377,7 +296,7 @@
           <span class="link-type" data-it="Intervista" data-en="Interview">Intervista</span>
           <h4>[Titolo intervista da inserire]</h4>
           <p class="link-source">[Canale / Testata] · [Data]</p>
-          <a href="#" target="_blank" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
         </div>
       </div>
 
@@ -392,7 +311,7 @@
           <span class="link-type" data-it="Video" data-en="Video">Video</span>
           <h4>[Titolo video da inserire]</h4>
           <p class="link-source">[Canale / Testata] · [Data]</p>
-          <a href="#" target="_blank" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
         </div>
       </div>
 
@@ -406,7 +325,7 @@
           <span class="link-type" data-it="Approfondimento" data-en="Article">Approfondimento</span>
           <h4>[Titolo da inserire]</h4>
           <p class="link-source">[Fonte] · [Data]</p>
-          <a href="#" target="_blank" class="read-more" data-it="Apri link" data-en="Open link">Apri link</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="read-more" data-it="Apri link" data-en="Open link">Apri link</a>
         </div>
       </div>
 
@@ -480,7 +399,8 @@
     <!-- Map -->
     <div class="map-wrapper fade-in">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.2692116600847!2d9.178072215824468!3d45.46438057910103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1539a2bbe63%3A0xe45d63c5b1b557e6!2sVia+Brisa%2C+3%2C+20123+Milano+MI!5e0!3m2!1sit!2sit!4v1550852161797"
+        title="Mappa sede Ant Capital, Via Brisa 3, Milano"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.2692116600847!2d9.178072215824468!3d45.46438057910103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1539a2bbe63%3A0xe45d63c5b1b557e6!2sVia+Brisa%2C+3%2C+20123+Milano+MI!5e0!3m2!1sit!2sit!4v1712000000000"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
@@ -498,7 +418,7 @@
         <img src="images/logo-white.png" alt="Ant Capital" />
         <p data-it="Boutique indipendente di investment banking con sede a Milano. Specializzata in M&A, capital raising e advisory strategico."
            data-en="Independent investment banking boutique based in Milan. Specialised in M&A, capital raising and strategic advisory.">
-          Boutique indipendente di investment banking con sede a Milano.
+          Boutique indipendente di investment banking con sede a Milano. Specializzata in M&A, capital raising e advisory strategico.
         </p>
       </div>
 
@@ -508,9 +428,9 @@
           <li><a href="#chi-siamo" data-it="Chi Siamo" data-en="About Us">Chi Siamo</a></li>
           <li><a href="#servizi"      data-it="Servizi"      data-en="Services">Servizi</a></li>
           <li><a href="#track-record" data-it="Track Record" data-en="Track Record">Track Record</a></li>
-          <li><a href="#partnership"  data-it="Partnership"  data-en="Partnerships">Partnership</a></li>
-          <li><a href="#news"         data-it="News"         data-en="News">News</a></li>
-          <li><a href="#link"         data-it="Link"         data-en="Links">Link</a></li>
+          <li style="display:none"><a href="#partnership"  data-it="Partnership"  data-en="Partnerships">Partnership</a></li>
+          <li style="display:none"><a href="#news"         data-it="News"         data-en="News">News</a></li>
+          <li style="display:none"><a href="#link"         data-it="Link"         data-en="Links">Link</a></li>
           <li><a href="#contatti"     data-it="Contatti"     data-en="Contact">Contatti</a></li>
         </ul>
       </div>
@@ -528,7 +448,8 @@
   </div>
 
   <div class="footer-copy">
-    <p>© 2025 Ant Capital Partners | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+    <p>© <span id="copy-year">2025</span> Ant Capital Partners | <a href="privacy-policy.html">Privacy Policy</a> | <a href="cookie-policy.html">Cookie Policy</a></p>
+    <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
   </div>
 </footer>
 
@@ -586,31 +507,79 @@
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // --- Track Record filters ---
-  document.querySelectorAll('.tr-filter').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tr-filter').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      document.querySelectorAll('.tr-card').forEach(card => {
-        card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
-      });
-    });
-  });
+
+  // --- Dynamic data loading ---
+  function renderPartners(partners) {
+    const grid = document.getElementById('partnership-grid');
+    grid.innerHTML = partners.map(p => {
+      const logoHtml = p.logo
+        ? `<img src="${p.logo}" alt="${p.nome}" style="max-width:100%;max-height:80px;object-fit:contain;">`
+        : `<span>${p.nome}</span>`;
+      const wrap = p.url ? `<a href="${p.url}" target="_blank" rel="noopener">` : '';
+      const wrapEnd = p.url ? '</a>' : '';
+      return `<div class="partner-card">${wrap}<div class="partner-logo-placeholder">${logoHtml}</div><p class="partner-name">${p.nome}</p>${wrapEnd}</div>`;
+    }).join('');
+    observer.observe(grid);
+  }
+
+  function renderRassegna(articles) {
+    const grid = document.getElementById('rassegna-grid');
+    grid.innerHTML = articles.map(a => {
+      const imgHtml = a.immagine
+        ? `<img src="${a.immagine}" alt="${a.titolo_it}" style="width:100%;height:180px;object-fit:cover;">`
+        : `<div class="news-img-placeholder"></div>`;
+      return `<div class="news-card">
+        ${imgHtml}
+        <div class="news-body">
+          <p class="date news-source">${a.testata} · ${a.data}</p>
+          <h4 data-it="${a.titolo_it}" data-en="${a.titolo_en}">${a.titolo_it}</h4>
+          <p data-it="${a.estratto_it}" data-en="${a.estratto_en}">${a.estratto_it}</p>
+          <a href="${a.url}" class="read-more" target="_blank" rel="noopener" data-it="Leggi l'articolo" data-en="Read article">Leggi l'articolo</a>
+        </div>
+      </div>`;
+    }).join('');
+    setLang(currentLang);
+    observer.observe(grid);
+  }
+
+  function renderComunicati(items) {
+    const grid = document.getElementById('comunicati-grid');
+    grid.innerHTML = items.map(c => {
+      const pdfHtml = c.pdf
+        ? `<a href="${c.pdf}" class="read-more" target="_blank" rel="noopener" data-it="Scarica PDF" data-en="Download PDF">Scarica PDF</a>`
+        : '';
+      return `<div class="news-card">
+        <div class="news-body" style="padding-top:24px;">
+          <p class="date">${c.data}</p>
+          <h4 data-it="${c.titolo_it}" data-en="${c.titolo_en}">${c.titolo_it}</h4>
+          <p data-it="${c.testo_it}" data-en="${c.testo_en}">${c.testo_it}</p>
+          ${pdfHtml}
+        </div>
+      </div>`;
+    }).join('');
+    setLang(currentLang);
+  }
+
+  Promise.all([
+    fetch('data/partners.json').then(r => r.json()),
+    fetch('data/rassegna.json').then(r => r.json()),
+    fetch('data/comunicati.json').then(r => r.json())
+  ]).then(([partners, rassegna, comunicati]) => {
+    renderPartners(partners);
+    renderRassegna(rassegna);
+    renderComunicati(comunicati);
+  }).catch(err => console.warn('Errore caricamento dati:', err));
 
   // --- Contact form ---
   function submitForm(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type=submit]');
-    btn.textContent = currentLang === 'it' ? 'Messaggio inviato!' : 'Message sent!';
-    btn.style.background = '#031430';
-    btn.style.color = '#d4b768';
-    setTimeout(() => {
-      btn.textContent = currentLang === 'it' ? 'Invia messaggio' : 'Send message';
-      btn.style.background = '';
-      btn.style.color = '';
-      e.target.reset();
-    }, 3000);
+    const form = e.target;
+    const name    = form.querySelector('[name=name]').value;
+    const subject = form.querySelector('[name=subject]').value || '';
+    const message = form.querySelector('[name=message]').value;
+    const mailSubject = encodeURIComponent(subject || (currentLang === 'it' ? 'Contatto dal sito' : 'Website enquiry'));
+    const mailBody = encodeURIComponent((subject ? '' : '') + name + '\n\n' + message);
+    window.location.href = 'mailto:info@antcapital.it?subject=' + mailSubject + '&body=' + mailBody;
   }
 </script>
 
