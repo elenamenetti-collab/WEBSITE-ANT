@@ -12,6 +12,14 @@ logo.png
 separator.png
 favicon.ico
 
+# Script di utilità e file temporanei
+node_modules/
+*.pdf
+crop-deals.js
+crop-precise.js
+detect-deals.js
+detect2.js
+
 # Sistema
 .DS_Store
 Thumbs.db
