@@ -752,6 +752,175 @@ section {
 .news-card .read-more:hover { color: var(--gold); }
 
 /* ===========================
+   PARTNERSHIP
+   =========================== */
+.partnership-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.partner-card {
+  text-align: center;
+}
+
+.partner-logo-placeholder {
+  height: 80px;
+  border: 1px solid var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: border-color 0.2s;
+}
+
+.partner-card:hover .partner-logo-placeholder {
+  border-color: var(--gold);
+}
+
+.partner-logo-placeholder span {
+  font-size: 11px;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+.partner-name {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) { .partnership-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px)  { .partnership-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ===========================
+   NEWS SOTTOSEZIONI
+   =========================== */
+.news-subsection {
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: 1px solid var(--gray);
+}
+
+.news-subsection-header {
+  margin-bottom: 40px;
+}
+
+.news-subsection-header h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.news-subsection-header .gold-line { margin: 0 0 0; }
+
+.news-source {
+  color: var(--navy) !important;
+  font-weight: 700;
+}
+
+/* ===========================
+   LINK & MEDIA
+   =========================== */
+#link { background: var(--navy); }
+#link .section-header h2 { color: var(--white); }
+#link .section-header p { color: rgba(255,255,255,0.6); }
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.link-card {
+  background: rgba(255,255,255,0.05);
+  transition: background 0.3s;
+}
+
+.link-card:hover { background: rgba(255,255,255,0.08); }
+
+.link-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.link-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.link-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3,20,48,0.4);
+  transition: background 0.2s;
+}
+
+.link-play i {
+  font-size: 2rem;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.link-card:hover .link-play { background: rgba(212,183,104,0.3); }
+
+.link-body {
+  padding: 24px;
+}
+
+.link-type {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.link-body h4 {
+  color: var(--white);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.link-source {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.link-body .read-more { color: var(--gold); border-bottom-color: var(--gold); }
+
+@media (max-width: 768px) {
+  .link-grid { grid-template-columns: 1fr; }
+}
+
+/* ===========================
    CONTATTI / CONTACT
    =========================== */
 #contatti .contact-grid {
