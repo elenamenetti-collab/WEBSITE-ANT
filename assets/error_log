@@ -1,0 +1,44 @@
+[05-May-2019 09:28:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mfn_opts_get() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php on line 10
+[05-May-2019 09:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mfn_opts_get() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php on line 10
+[04-Jul-2019 05:56:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mfn_opts_get() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php on line 10
+[13-Jul-2019 06:32:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mfn_opts_get() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php on line 10
+[09-Aug-2019 21:29:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php on line 10
+[11-Aug-2019 18:39:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php on line 10
+[28-Aug-2019 11:25:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php on line 10
+[20-Sep-2019 10:25:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php on line 10
+[22-May-2021 09:42:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mfn_opts_get() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/404.php on line 10
+[14-Sep-2025 02:13:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php on line 10
+[14-Sep-2025 02:14:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/e82pjh3h0r4r/public_html/wp-content/themes/betheme/index.php on line 10
