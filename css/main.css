@@ -570,6 +570,19 @@ section {
   font-weight: 700;
 }
 
+.tr-slides {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tr-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
 .tr-management {
   margin-top: 80px;
   padding-top: 60px;
