@@ -73,11 +73,14 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 0;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 30px;
 }
 
 #navbar .logo {
-  margin-left: -10px;
+  margin-left: 0;
 }
 
 #navbar .logo img {
@@ -181,7 +184,7 @@ ul { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(3,20,48,0.65) 0%, rgba(3,20,48,0.45) 60%, rgba(3,20,48,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 60%, rgba(0,0,0,0.2) 100%);
 }
 
 .hero-content {
@@ -330,6 +333,8 @@ section {
 
 .bg-light { background: var(--light); }
 
+.bg-steel { background: #f0f0f0; }
+
 /* ===========================
    CHI SIAMO / ABOUT
    =========================== */
@@ -404,6 +409,10 @@ section {
   object-fit: cover;
 }
 
+#chi-siamo .about-image .about-img-vintage {
+  filter: grayscale(40%) sepia(20%) contrast(90%) brightness(88%);
+}
+
 #chi-siamo .about-image::before {
   content: '';
   position: absolute;
@@ -416,10 +425,6 @@ section {
 /* ===========================
    SERVIZI / SERVICES
    =========================== */
-#servizi {
-  background: var(--navy);
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -431,16 +436,17 @@ section {
 }
 
 .service-card {
-  background: rgba(255,255,255,0.04);
+  background: var(--white);
   padding: 48px 36px;
   border-top: 3px solid transparent;
   transition: all 0.3s;
   cursor: default;
+  box-shadow: 0 2px 12px rgba(3,20,48,0.06);
 }
 
 .service-card:hover {
-  background: rgba(212,183,104,0.1);
-  border-top-color: var(--gold);
+  background: rgba(3,20,48,0.08);
+  border-top-color: var(--navy);
 }
 
 .service-card .icon {
@@ -453,12 +459,12 @@ section {
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--navy);
   margin-bottom: 16px;
 }
 
 .service-card p {
-  color: rgba(255,255,255,0.6);
+  color: #555;
   font-size: 0.9rem;
   line-height: 1.8;
 }
@@ -723,6 +729,14 @@ section {
   object-fit: cover;
 }
 
+.news-card .news-img-logo {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #f8f8f8;
+  padding: 32px;
+}
+
 .news-card .news-img-placeholder {
   width: 100%;
   height: 200px;
@@ -816,6 +830,15 @@ section {
 
 @media (max-width: 1024px) { .partnership-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 600px)  { .partnership-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* News grid 4 col */
+.news-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) { .news-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .news-grid-4 { grid-template-columns: 1fr; } }
+
 
 /* ===========================
    NEWS SOTTOSEZIONI

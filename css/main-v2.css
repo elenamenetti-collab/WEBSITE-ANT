@@ -1,0 +1,67 @@
+/* ===========================
+   ANT CAPITAL — V2
+   Hero usa l'immagine nelle sue proporzioni naturali
+   =========================== */
+@import url('main.css');
+
+#hero {
+  position: relative;
+  height: auto;
+  min-height: 0;
+  background: none;
+  display: block;
+  overflow: hidden;
+}
+
+#hero::before { display: none; }
+
+/* Navbar links in navy */
+#navbar nav a { color: var(--navy); }
+#navbar nav a:hover { color: var(--navy); opacity: 0.7; }
+#navbar .lang-switcher button { color: rgba(3,20,48,0.5); }
+#navbar .lang-switcher button.active { color: var(--navy); }
+#navbar .lang-switcher span { color: rgba(3,20,48,0.3); }
+#navbar .menu-toggle span { background: var(--navy); }
+#navbar.scrolled nav a { color: var(--white); }
+#navbar.scrolled nav a:hover { color: var(--gold); opacity: 1; }
+#navbar.scrolled .lang-switcher button { color: rgba(255,255,255,0.5); }
+#navbar.scrolled .lang-switcher button.active { color: var(--gold); }
+#navbar.scrolled .lang-switcher span { color: rgba(255,255,255,0.3); }
+#navbar.scrolled .menu-toggle span { background: var(--white); }
+
+/* L'immagine occupa tutta la larghezza, altezza proporzionale */
+.hero-banner-img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Testo sovrapposto sul lato sinistro (area city) */
+.hero-content {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 5%;
+  text-align: left;
+  background: linear-gradient(to right, rgba(0,0,0,0.45) 0%, transparent 100%);
+}
+
+.hero-content .tagline {
+  font-size: clamp(0.85rem, 1.8vw, 1.15rem);
+  margin-bottom: 14px;
+}
+
+.hero-content .subtitle {
+  font-size: clamp(0.8rem, 1.4vw, 1rem);
+  max-width: 100%;
+  margin: 0 0 22px 0;
+}
+
+.hero-content .btn {
+  font-size: 9px;
+  padding: 10px 22px;
+  align-self: flex-start;
+}
