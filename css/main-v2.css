@@ -194,9 +194,15 @@ body.sidebar-open { overflow: hidden; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 45% 90% at 95% 50%, rgba(3,20,48,0.95) 0%, transparent 60%),
-    radial-gradient(ellipse 30% 50% at 80% 85%, rgba(3,20,48,0.5) 0%, transparent 55%),
-    linear-gradient(100deg, #ffffff 0%, #f0f3f7 20%, #dde4ed 42%, #b0bfce 60%, #4a6480 78%, #031430 100%);
+    linear-gradient(100deg,
+      #ffffff   0%,
+      #eef1f6  15%,
+      #d8e0ea  30%,
+      #b8c8d8  45%,
+      #8aaabf  58%,
+      #4d7090  70%,
+      #1a3a5c  83%,
+      #031430 100%);
   z-index: 0;
 }
 
