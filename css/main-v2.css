@@ -231,7 +231,7 @@ body.sidebar-open { overflow: hidden; }
 }
 
 .hero-claim {
-  font-family: 'Kayak', 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
   color: var(--navy);
   line-height: 1.2;
