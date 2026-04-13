@@ -491,64 +491,44 @@ section {
    =========================== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
 }
 
 .services-grid-4 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .service-card {
   background: var(--white);
-  padding: 48px 36px;
-  border-top: 3px solid transparent;
-  transition: all 0.3s;
+  padding: 56px 32px 48px;
+  text-align: center;
+  border-right: 1px solid rgba(3,20,48,0.08);
+  transition: background 0.3s;
   cursor: default;
-  box-shadow: 0 2px 12px rgba(3,20,48,0.06);
 }
 
-.service-card:hover {
-  background: rgba(3,20,48,0.08);
-  border-top-color: var(--navy);
-}
+.service-card:last-child { border-right: none; }
 
-/* Service icons */
+.service-card:hover { background: rgba(3,20,48,0.04); }
+
+/* Service icons — large, no box */
 .svc-icon-wrap {
-  width: 88px;
-  height: 88px;
-  border: 1.5px solid var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 28px;
-  transition: background 0.3s, border-color 0.3s;
-}
-
-.service-card:hover .svc-icon-wrap {
-  background: var(--navy);
-  border-color: var(--navy);
+  margin-bottom: 32px;
 }
 
 .svc-icon {
-  width: 58px;
+  width: 110px;
   height: auto;
   color: var(--navy);
-  transition: color 0.3s;
-}
-
-.service-card:hover .svc-icon {
-  color: var(--gold);
-}
-
-.service-card .icon {
-  font-size: 2rem;
-  color: var(--gold);
-  margin-bottom: 20px;
+  overflow: visible;
 }
 
 .service-card h3 {
-  font-size: 1rem;
+  font-size: 0.78rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--navy);
@@ -557,7 +537,7 @@ section {
 
 .service-card p {
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.8;
 }
 
@@ -1370,6 +1350,8 @@ section {
    =========================== */
 @media (max-width: 1024px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-card { border-right: none; border-bottom: 1px solid rgba(3,20,48,0.08); }
+  .service-card:last-child { border-bottom: none; }
   #team .team-grid { grid-template-columns: repeat(2, 1fr); }
   #chi-siamo .about-grid { grid-template-columns: 1fr; }
   #chi-siamo .about-image { display: none; }
