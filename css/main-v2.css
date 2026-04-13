@@ -46,11 +46,6 @@
 
 #navbar.scrolled .logo-v2 img { height: 36px; }
 
-/* Show white logo by default, color logo when scrolled */
-.logo-v2 .logo-light { display: block; }
-.logo-v2 .logo-dark  { display: none; }
-#navbar.scrolled .logo-v2 .logo-light { display: none; }
-#navbar.scrolled .logo-v2 .logo-dark  { display: block; }
 
 /* Right side: lang + hamburger */
 .nav-right-v2 {
