@@ -15,6 +15,7 @@ favicon.ico
 # Script di utilità e file temporanei
 node_modules/
 *.pdf
+!docs/*.pdf
 crop-deals.js
 crop-precise.js
 detect-deals.js
