@@ -18,12 +18,16 @@
 /* Navbar links in navy */
 #navbar nav a { color: var(--navy); }
 #navbar nav a:hover { color: var(--navy); opacity: 0.7; }
+#navbar .nav-drop-trigger { color: var(--navy); }
+#navbar .nav-drop-trigger:hover { color: var(--navy); opacity: 0.7; }
 #navbar .lang-switcher button { color: rgba(3,20,48,0.5); }
 #navbar .lang-switcher button.active { color: var(--navy); }
 #navbar .lang-switcher span { color: rgba(3,20,48,0.3); }
 #navbar .menu-toggle span { background: var(--navy); }
 #navbar.scrolled nav a { color: var(--white); }
 #navbar.scrolled nav a:hover { color: var(--gold); opacity: 1; }
+#navbar.scrolled .nav-drop-trigger { color: var(--white); }
+#navbar.scrolled .nav-drop-trigger:hover { color: var(--gold); opacity: 1; }
 #navbar.scrolled .lang-switcher button { color: rgba(255,255,255,0.5); }
 #navbar.scrolled .lang-switcher button.active { color: var(--gold); }
 #navbar.scrolled .lang-switcher span { color: rgba(255,255,255,0.3); }

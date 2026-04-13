@@ -31,15 +31,25 @@
     </a>
 
     <nav id="main-nav">
-      <a href="#chi-siamo"    data-it="Chi Siamo"          data-en="About Us">Chi Siamo</a>
-      <a href="#servizi"      data-it="Servizi"             data-en="Services">Servizi</a>
-      <a href="#track-record" data-it="Transaction"          data-en="Transaction">Transaction</a>
-      <a href="#partnership"  data-it="Partnership"         data-en="Partnerships">Partnership</a>
-      <a href="#team"         data-it="Team"                data-en="Team">Team</a>
-      <a href="#news"         data-it="News & Comunicati"   data-en="News & Press">News</a>
-      <a href="#link"         data-it="Link"                data-en="Links">Link</a>
-      <a href="#join"         data-it="Lavora con Noi"      data-en="Join Our Team">Lavora con Noi</a>
-      <a href="#contatti"     data-it="Contatti"            data-en="Contact">Contatti</a>
+      <div class="nav-dropdown">
+        <span class="nav-drop-trigger" data-it="Chi Siamo" data-en="About">Chi Siamo <i class="fa-solid fa-chevron-down nav-arrow"></i></span>
+        <div class="dropdown-menu">
+          <a href="#chi-siamo"   data-it="Chi Siamo"   data-en="About Us">Chi Siamo</a>
+          <a href="#team"        data-it="Team"         data-en="Team">Team</a>
+          <a href="#partnership" data-it="Partnership"  data-en="Partnerships">Partnership</a>
+        </div>
+      </div>
+      <a href="#servizi"      data-it="Servizi"        data-en="Services">Servizi</a>
+      <a href="#track-record" data-it="Transaction"    data-en="Transaction">Transaction</a>
+      <div class="nav-dropdown">
+        <span class="nav-drop-trigger" data-it="Media" data-en="Media">Media <i class="fa-solid fa-chevron-down nav-arrow"></i></span>
+        <div class="dropdown-menu">
+          <a href="#news" data-it="News & Comunicati" data-en="News & Press">News</a>
+          <a href="#link" data-it="Link & Media"       data-en="Links & Media">Link & Media</a>
+        </div>
+      </div>
+      <a href="#join"     data-it="Lavora con Noi" data-en="Join Our Team">Lavora con Noi</a>
+      <a href="#contatti" data-it="Contatti"        data-en="Contact">Contatti</a>
 
       <div class="lang-switcher">
         <button id="btn-it" class="active" onclick="setLang('it')">IT</button>
@@ -552,17 +562,17 @@
     <div class="link-grid fade-in">
 
       <div class="link-card">
-        <div class="link-thumb">
-          <div class="link-thumb-placeholder">
-            <i class="fa-brands fa-youtube"></i>
+        <a href="https://youtu.be/heRmwbLTY1s?si=oPZfB7xSglSKLSam" target="_blank" rel="noopener">
+          <div class="link-thumb">
+            <img src="https://img.youtube.com/vi/heRmwbLTY1s/maxresdefault.jpg" alt="Video Ant Capital" style="width:100%;height:100%;object-fit:cover;" />
+            <div class="link-play"><i class="fa-solid fa-play"></i></div>
           </div>
-          <div class="link-play"><i class="fa-solid fa-play"></i></div>
-        </div>
+        </a>
         <div class="link-body">
-          <span class="link-type" data-it="Intervista" data-en="Interview">Intervista</span>
-          <h4>[Titolo intervista da inserire]</h4>
-          <p class="link-source">[Canale / Testata] · [Data]</p>
-          <a href="#" target="_blank" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
+          <span class="link-type" data-it="Video" data-en="Video">Video</span>
+          <h4 data-it="[Titolo da inserire]" data-en="[Title to be added]">[Titolo da inserire]</h4>
+          <p class="link-source">YouTube · Ant Capital</p>
+          <a href="https://youtu.be/heRmwbLTY1s?si=oPZfB7xSglSKLSam" target="_blank" rel="noopener" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
         </div>
       </div>
 
@@ -595,6 +605,35 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     JOIN OUR TEAM
+     ======================== -->
+<section id="join" class="bg-navy">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 data-it="Lavora con Noi" data-en="Join Our Team">Lavora con Noi</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="join-grid fade-in">
+      <div class="join-card">
+        <div class="join-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h4 data-it="Analyst / Associate" data-en="Analyst / Associate">Analyst / Associate</h4>
+        <p data-it="Cerchiamo professionisti con 1–4 anni di esperienza in investment banking, M&A o corporate finance. Capacità analitiche solide, orientamento al risultato e ottima conoscenza di Excel e modelli finanziari." data-en="We look for professionals with 1–4 years of experience in investment banking, M&A or corporate finance. Strong analytical skills, results-oriented mindset and excellent knowledge of Excel and financial models.">Cerchiamo professionisti con 1–4 anni di esperienza in investment banking, M&A o corporate finance. Capacità analitiche solide, orientamento al risultato e ottima conoscenza di Excel e modelli finanziari.</p>
+      </div>
+      <div class="join-card">
+        <div class="join-icon"><i class="fa-solid fa-handshake"></i></div>
+        <h4 data-it="Senior Advisor" data-en="Senior Advisor">Senior Advisor</h4>
+        <p data-it="Valutiamo la collaborazione con professionisti senior con un solido network industriale e finanziario e una comprovata esperienza in operazioni di finanza straordinaria." data-en="We evaluate collaboration with senior professionals with a solid industrial and financial network and proven experience in extraordinary finance transactions.">Valutiamo la collaborazione con professionisti senior con un solido network industriale e finanziario e una comprovata esperienza in operazioni di finanza straordinaria.</p>
+      </div>
+      <div class="join-card">
+        <div class="join-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h4 data-it="Stage / Internship" data-en="Stage / Internship">Stage / Internship</h4>
+        <p data-it="Offriamo opportunità di stage per neolaureati in Economia, Finanza o discipline affini con forte motivazione a crescere in un ambiente boutique di alto livello." data-en="We offer internship opportunities for recent graduates in Economics, Finance or related disciplines with strong motivation to grow in a high-level boutique environment.">Offriamo opportunità di stage per neolaureati in Economia, Finanza o discipline affini con forte motivazione a crescere in un ambiente boutique di alto livello.</p>
+      </div>
     </div>
   </div>
 </section>
