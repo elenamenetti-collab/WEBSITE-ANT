@@ -194,10 +194,9 @@ body.sidebar-open { overflow: hidden; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 55% 90% at 90% 40%, rgba(3,20,48,0.92) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 60% at 75% 80%, rgba(3,20,48,0.55) 0%, transparent 60%),
-    radial-gradient(ellipse 30% 50% at 60% 10%, rgba(80,100,130,0.3) 0%, transparent 55%),
-    linear-gradient(105deg, #ffffff 0%, #edf0f4 25%, #cdd4de 48%, #7a90a8 65%, #1a3050 82%, #031430 100%);
+    radial-gradient(ellipse 45% 90% at 95% 50%, rgba(3,20,48,0.95) 0%, transparent 60%),
+    radial-gradient(ellipse 30% 50% at 80% 85%, rgba(3,20,48,0.5) 0%, transparent 55%),
+    linear-gradient(100deg, #ffffff 0%, #f0f3f7 20%, #dde4ed 42%, #b0bfce 60%, #4a6480 78%, #031430 100%);
   z-index: 0;
 }
 
@@ -226,7 +225,7 @@ body.sidebar-open { overflow: hidden; }
   font-size: clamp(0.7rem, 1.2vw, 0.9rem);
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
+  color: rgba(3,20,48,0.5);
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -234,7 +233,7 @@ body.sidebar-open { overflow: hidden; }
 .hero-claim {
   font-family: 'Kayak', 'Montserrat', sans-serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
-  color: var(--white);
+  color: var(--navy);
   line-height: 1.2;
   margin-bottom: 36px;
   font-weight: normal;
@@ -245,13 +244,14 @@ body.sidebar-open { overflow: hidden; }
   font-size: 10px;
   padding: 12px 28px;
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  color: var(--white);
+  border: 1px solid rgba(3,20,48,0.4);
+  color: var(--navy);
   letter-spacing: 2.5px;
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .hero-content-v2 .btn:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: var(--white);
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
 }
