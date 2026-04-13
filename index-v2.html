@@ -43,9 +43,9 @@
       <a href="#contatti"    data-it="Contatti"          data-en="Contact">Contatti</a>
 
       <div class="lang-switcher">
-        <button id="btn-it" class="active" onclick="setLang('it')">IT</button>
+        <button id="btn-it" onclick="setLang('it')">IT</button>
         <span>/</span>
-        <button id="btn-en" onclick="setLang('en')">EN</button>
+        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
       </div>
     </nav>
 
@@ -799,6 +799,9 @@
       el.placeholder = lang === 'it' ? el.dataset.placeholderIt : el.dataset.placeholderEn;
     });
   }
+
+  // Default language: English
+  setLang('en');
 
   // --- Scroll animations ---
   const observer = new IntersectionObserver((entries) => {
