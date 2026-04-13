@@ -36,7 +36,7 @@
       <a href="#servizi"     data-it="Servizi"           data-en="Services">Servizi</a>
       <a href="#track-record" data-it="Transaction"     data-en="Transaction">Transaction</a>
       <a href="#news"        data-it="News"              data-en="News">News</a>
-      <a href="#link"        data-it="Link &amp; Media"  data-en="Links &amp; Media">Link &amp; Media</a>
+      <a href="#link" data-it="Link &amp; Media" data-en="Links &amp; Media" onclick="showLink(event)">Link &amp; Media</a>
       <a href="#join" data-it="Lavora con Noi" data-en="Join Our Team" onclick="showJoin(event)">Lavora con Noi</a>
       <a href="#contatti"    data-it="Contatti"          data-en="Contact">Contatti</a>
 
@@ -561,35 +561,6 @@
         </div>
       </div>
 
-      <div class="link-card">
-        <div class="link-thumb">
-          <div class="link-thumb-placeholder">
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-          <div class="link-play"><i class="fa-solid fa-play"></i></div>
-        </div>
-        <div class="link-body">
-          <span class="link-type" data-it="Video" data-en="Video">Video</span>
-          <h4>[Titolo video da inserire]</h4>
-          <p class="link-source">[Canale / Testata] · [Data]</p>
-          <a href="#" target="_blank" class="read-more" data-it="Guarda il video" data-en="Watch video">Guarda il video</a>
-        </div>
-      </div>
-
-      <div class="link-card">
-        <div class="link-thumb">
-          <div class="link-thumb-placeholder">
-            <i class="fa-solid fa-link"></i>
-          </div>
-        </div>
-        <div class="link-body">
-          <span class="link-type" data-it="Approfondimento" data-en="Article">Approfondimento</span>
-          <h4>[Titolo da inserire]</h4>
-          <p class="link-source">[Fonte] · [Data]</p>
-          <a href="#" target="_blank" class="read-more" data-it="Apri link" data-en="Open link">Apri link</a>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -828,6 +799,15 @@
   function showJoin(e) {
     e.preventDefault();
     var section = document.getElementById('join');
+    section.style.display = 'block';
+    setTimeout(function() {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }, 10);
+  }
+
+  function showLink(e) {
+    e.preventDefault();
+    var section = document.getElementById('link');
     section.style.display = 'block';
     setTimeout(function() {
       section.scrollIntoView({ behavior: 'smooth' });
