@@ -37,7 +37,7 @@
       <a href="#track-record" data-it="Transaction"     data-en="Transaction">Transaction</a>
       <a href="#news"        data-it="News"              data-en="News">News</a>
       <a href="#link"        data-it="Link &amp; Media"  data-en="Links &amp; Media">Link &amp; Media</a>
-      <a href="#join"        data-it="Lavora con Noi"   data-en="Join Our Team">Lavora con Noi</a>
+      <a href="#join" data-it="Lavora con Noi" data-en="Join Our Team" onclick="showJoin(event)">Lavora con Noi</a>
       <a href="#contatti"    data-it="Contatti"          data-en="Contact">Contatti</a>
 
       <div class="lang-switcher">
@@ -836,6 +836,15 @@
       btn.style.color = '';
       e.target.reset();
     }, 3000);
+  }
+
+  function showJoin(e) {
+    e.preventDefault();
+    var section = document.getElementById('join');
+    section.style.display = 'block';
+    setTimeout(function() {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }, 10);
   }
 </script>
 

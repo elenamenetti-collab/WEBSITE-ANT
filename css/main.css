@@ -797,7 +797,7 @@ section {
 /* ===========================
    JOIN OUR TEAM
    =========================== */
-#join { background: var(--navy); }
+#join { display: none; background: var(--navy); }
 #join .section-header h2 { color: var(--white); }
 #join .section-header p  { color: rgba(255,255,255,0.65); }
 
