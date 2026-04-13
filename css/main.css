@@ -921,6 +921,8 @@ section {
 /* ===========================
    PARTNERSHIP
    =========================== */
+#partnership { display: none; }
+
 .partnership-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -974,6 +976,8 @@ section {
 /* ===========================
    NEWS SOTTOSEZIONI
    =========================== */
+#comunicati { display: none; }
+
 .news-subsection {
   margin-top: 70px;
   padding-top: 50px;

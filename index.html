@@ -36,6 +36,8 @@
       <a href="#servizi"     data-it="Servizi"           data-en="Services">Servizi</a>
       <a href="#track-record" data-it="Transaction"     data-en="Transaction">Transaction</a>
       <a href="#news"        data-it="News"              data-en="News">News</a>
+      <a href="#comunicati" data-it="Comunicati Stampa" data-en="Press Releases" onclick="showComunicati(event)">Comunicati Stampa</a>
+      <a href="#partnership" data-it="Partnership"      data-en="Partnerships"   onclick="showPartnership(event)">Partnership</a>
       <a href="#link" data-it="Link &amp; Media" data-en="Links &amp; Media" onclick="showLink(event)">Link &amp; Media</a>
       <a href="#join" data-it="Lavora con Noi" data-en="Join Our Team" onclick="showJoin(event)">Lavora con Noi</a>
       <a href="#contatti"    data-it="Contatti"          data-en="Contact">Contatti</a>
@@ -430,7 +432,7 @@
     </div>
 
     <!-- Comunicati stampa -->
-    <div class="news-subsection fade-in">
+    <div id="comunicati" class="news-subsection fade-in">
       <div class="news-subsection-header">
         <h3 data-it="Comunicati Stampa" data-en="Press Releases">Comunicati Stampa</h3>
         <div class="gold-line"></div>
@@ -808,6 +810,24 @@
   function showLink(e) {
     e.preventDefault();
     var section = document.getElementById('link');
+    section.style.display = 'block';
+    setTimeout(function() {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }, 10);
+  }
+
+  function showComunicati(e) {
+    e.preventDefault();
+    var sub = document.getElementById('comunicati');
+    sub.style.display = 'block';
+    setTimeout(function() {
+      sub.scrollIntoView({ behavior: 'smooth' });
+    }, 10);
+  }
+
+  function showPartnership(e) {
+    e.preventDefault();
+    var section = document.getElementById('partnership');
     section.style.display = 'block';
     setTimeout(function() {
       section.scrollIntoView({ behavior: 'smooth' });
