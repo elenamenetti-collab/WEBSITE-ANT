@@ -449,6 +449,34 @@ section {
   border-top-color: var(--navy);
 }
 
+/* Service icons */
+.svc-icon-wrap {
+  width: 72px;
+  height: 72px;
+  border: 1.5px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.service-card:hover .svc-icon-wrap {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.svc-icon {
+  width: 38px;
+  height: 38px;
+  color: var(--navy);
+  transition: color 0.3s;
+}
+
+.service-card:hover .svc-icon {
+  color: var(--gold);
+}
+
 .service-card .icon {
   font-size: 2rem;
   color: var(--gold);
