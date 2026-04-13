@@ -713,8 +713,8 @@ section {
    =========================== */
 #team .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px 20px;
 }
 
 .team-card {
@@ -723,9 +723,10 @@ section {
 
 .team-card .photo {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  margin-bottom: 20px;
+  object-position: top;
+  margin-bottom: 14px;
   filter: grayscale(20%);
   transition: filter 0.3s;
 }
@@ -734,9 +735,9 @@ section {
 
 .team-card .photo-placeholder {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   background: var(--navy);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -744,20 +745,20 @@ section {
 
 .team-card .photo-placeholder span {
   font-family: 'Kayak', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--gold);
   opacity: 0.4;
 }
 
 .team-card h4 {
-  font-size: 0.95rem;
-  letter-spacing: 2px;
+  font-size: 0.82rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .team-card .role {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: var(--gold);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -765,14 +766,25 @@ section {
 }
 
 .team-card .bio {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: #666;
-  margin-top: 10px;
+  margin-top: 8px;
   line-height: 1.7;
 }
 
-@media (max-width: 1024px) { #team .team-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px)  { #team .team-grid { grid-template-columns: 1fr; } }
+.team-card .linkedin {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--navy);
+  font-size: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.team-card .linkedin:hover { opacity: 1; color: #0077b5; }
+
+@media (max-width: 1024px) { #team .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px)  { #team .team-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* ===========================
    JOIN OUR TEAM
