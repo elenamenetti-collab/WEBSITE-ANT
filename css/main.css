@@ -1058,7 +1058,7 @@ section {
 
 .press-icon {
   font-size: 2rem;
-  color: var(--gold);
+  color: var(--navy);
   flex-shrink: 0;
   margin-top: 2px;
 }
