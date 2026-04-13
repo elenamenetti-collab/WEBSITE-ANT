@@ -38,24 +38,19 @@
 }
 
 .logo-v2 img {
-  height: 36px;
-  width: 36px;
+  height: 44px;
+  width: auto;
   object-fit: contain;
-  transition: height 0.3s;
+  transition: height 0.3s, opacity 0.3s;
 }
 
-#navbar.scrolled .logo-v2 img { height: 30px; width: 30px; }
+#navbar.scrolled .logo-v2 img { height: 36px; }
 
-.brand-name {
-  font-family: 'Kayak', 'Montserrat', sans-serif;
-  font-size: 13px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--white);
-  transition: color 0.3s;
-}
-
-#navbar.scrolled .brand-name { color: var(--navy); }
+/* Show white logo by default, color logo when scrolled */
+.logo-v2 .logo-light { display: block; }
+.logo-v2 .logo-dark  { display: none; }
+#navbar.scrolled .logo-v2 .logo-light { display: none; }
+#navbar.scrolled .logo-v2 .logo-dark  { display: block; }
 
 /* Right side: lang + hamburger */
 .nav-right-v2 {
@@ -148,26 +143,15 @@
 .sidebar-close:hover { color: var(--white); }
 
 .sidebar-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 48px;
-  padding-bottom: 28px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .sidebar-logo img {
-  height: 30px;
-  width: 30px;
+  height: 38px;
+  width: auto;
   object-fit: contain;
-}
-
-.sidebar-logo span {
-  font-family: 'Kayak', 'Montserrat', sans-serif;
-  font-size: 11px;
-  letter-spacing: 3.5px;
-  text-transform: uppercase;
-  color: var(--white);
 }
 
 .sidebar-links {
