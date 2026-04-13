@@ -713,8 +713,10 @@ section {
    =========================== */
 #team .team-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .team-card {
@@ -783,7 +785,7 @@ section {
 
 .team-card .linkedin:hover { opacity: 1; color: #0077b5; }
 
-@media (max-width: 1024px) { #team .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 1024px) { #team .team-grid { grid-template-columns: repeat(3, 1fr); max-width: 100%; } }
 @media (max-width: 600px)  { #team .team-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* ===========================
