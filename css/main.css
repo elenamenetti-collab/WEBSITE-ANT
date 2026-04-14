@@ -1013,6 +1013,8 @@ section {
 }
 
 .news-subsection-header h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   letter-spacing: 3px;
   text-transform: uppercase;
