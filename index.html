@@ -31,7 +31,7 @@
     </a>
 
     <nav id="main-nav">
-      <a href="#chi-siamo"   data-it="Chi Siamo"        data-en="About">Chi Siamo</a>
+      <a href="#chi-siamo"   data-it="Chi Siamo"        data-en="About" onclick="showAbout()">Chi Siamo</a>
       <a href="#team"        data-it="Team"              data-en="Team">Team</a>
       <a href="#servizi"     data-it="Servizi"           data-en="Services">Servizi</a>
       <a href="#track-record" data-it="Transaction"     data-en="Transaction">Transaction</a>
@@ -90,9 +90,8 @@
       </p>
     </div>
 
-    <div class="about-grid">
+    <div id="about-detail" class="about-detail">
       <div class="about-text fade-in">
-        <div class="gold-line"></div>
         <p data-it="Ant Capital è una boutique indipendente specializzata in operazioni di Mergers &amp; Acquisitions, capital raising e advisory strategico per aziende mid-market italiane e internazionali. Fondata nel 2016, opera con focalizzazione esclusiva alla finanza straordinaria, garantendo ai propri clienti totale indipendenza di giudizio e assenza di conflitti di interesse."
            data-en="Ant Capital is an independent boutique specialised in Mergers &amp; Acquisitions, capital raising and strategic advisory for Italian and international mid-market companies. Founded in 2016, it operates with exclusive focus on extraordinary finance, guaranteeing its clients total independence of judgement and absence of conflicts of interest.">
           Ant Capital è una boutique indipendente specializzata in operazioni di Mergers &amp; Acquisitions, capital raising e advisory strategico per aziende mid-market italiane e internazionali. Fondata nel 2016, opera con focalizzazione esclusiva alla finanza straordinaria, garantendo ai propri clienti totale indipendenza di giudizio e assenza di conflitti di interesse.
@@ -105,10 +104,6 @@
            data-en="We operate with the utmost confidentiality, structuring tailor-made solutions for each mandate and placing our clients' strategic objectives at the centre of everything we do.">
           Operiamo con massima riservatezza, strutturando per ogni mandato soluzioni tailor-made e mettendo al centro gli obiettivi strategici dei nostri clienti.
         </p>
-      </div>
-
-      <div class="about-image fade-in">
-        <img src="images/Porta-nuova-milano.jpg" alt="Porta Nuova Milano" class="about-img-vintage" />
       </div>
     </div>
   </div>
@@ -974,6 +969,14 @@
       btn.style.color = '';
       e.target.reset();
     }, 3000);
+  }
+
+  function showAbout() {
+    var detail = document.getElementById('about-detail');
+    if (detail) {
+      detail.style.display = 'block';
+      setTimeout(function() { detail.classList.add('open'); }, 10);
+    }
   }
 
   function showJoin(e) {
