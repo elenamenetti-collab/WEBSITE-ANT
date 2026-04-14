@@ -649,11 +649,11 @@ section {
   object-fit: contain;
   background-color: #ffffff;
   display: block;
-  filter: grayscale(1) sepia(1) hue-rotate(195deg) saturate(1.6) brightness(1.15);
+  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(1.2) brightness(1.15);
   transition: filter 0.3s ease;
 }
 .deal-tile:hover .deal-img {
-  filter: grayscale(1) sepia(1) hue-rotate(195deg) saturate(1.6) brightness(1.15);
+  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(1.2) brightness(1.15);
 }
 
 .deal-body {
