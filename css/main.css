@@ -380,6 +380,15 @@ section {
   font-size: 0.95rem;
 }
 
+.section-subtitle {
+  color: #444;
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
 .bg-navy {
   background: var(--navy);
 }
@@ -397,7 +406,7 @@ section {
 
 .bg-light { background: var(--light); }
 
-.bg-steel { background: #f0f0f0; }
+.bg-steel { background: #ffffff; }
 
 /* ===========================
    CHI SIAMO / ABOUT
