@@ -814,7 +814,7 @@ section {
    JOIN OUR TEAM
    =========================== */
 #join { display: none; background: var(--navy); }
-#join .section-header h2 { color: var(--white); }
+#join .section-header h2 { color: var(--white); font-size: clamp(1.4rem, 2.2vw, 2rem); }
 #join .section-header p { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 640px; margin-top: 16px; }
 
 .positions-list {
