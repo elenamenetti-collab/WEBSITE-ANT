@@ -382,9 +382,9 @@ section {
 
 .section-subtitle {
   color: #444;
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.12rem;
   line-height: 1.7;
   font-style: italic;
 }
@@ -398,12 +398,19 @@ section {
   line-height: 1.75;
 }
 
+#chi-siamo .section-header {
+  margin-bottom: 0;
+}
+
 /* Reduce gap between chi-siamo and servizi */
 #chi-siamo {
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 #servizi {
-  padding-top: 30px;
+  padding-top: 16px;
+}
+#servizi .section-header {
+  margin-bottom: 40px;
 }
 
 .bg-navy {
