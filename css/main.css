@@ -389,6 +389,23 @@ section {
   font-style: italic;
 }
 
+/* About intro — larger, slightly bolder */
+#chi-siamo .section-header p {
+  font-size: 1.18rem;
+  font-weight: 500;
+  color: #333;
+  max-width: 820px;
+  line-height: 1.75;
+}
+
+/* Reduce gap between chi-siamo and servizi */
+#chi-siamo {
+  padding-bottom: 30px;
+}
+#servizi {
+  padding-top: 30px;
+}
+
 .bg-navy {
   background: var(--navy);
 }
