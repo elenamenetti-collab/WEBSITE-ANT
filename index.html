@@ -32,7 +32,7 @@
 
     <nav id="main-nav">
       <a href="#chi-siamo"   data-it="Chi Siamo"        data-en="About" onclick="showAbout()">Chi Siamo</a>
-      <a href="#team"        data-it="Team"              data-en="Team">Team</a>
+      <a href="#team" onclick="showTeam(event)" data-it="Team" data-en="Team">Team</a>
       <a href="#servizi"     data-it="Servizi"           data-en="Services">Servizi</a>
       <a href="#track-record" data-it="Transaction"     data-en="Transaction">Transaction</a>
       <a href="#news"        data-it="News"              data-en="News">News</a>
@@ -856,7 +856,7 @@
           <li><a href="#servizi"      data-it="Servizi"      data-en="Services">Servizi</a></li>
           <li><a href="#track-record" data-it="Transaction"  data-en="Transaction">Transaction</a></li>
           <li><a href="#partnership"  data-it="Partnership"  data-en="Partnerships">Partnership</a></li>
-          <li><a href="#team"         data-it="Team"         data-en="Team">Team</a></li>
+          <li><a href="#team" onclick="showTeam(event)" data-it="Team" data-en="Team">Team</a></li>
           <li><a href="#news"         data-it="News"         data-en="News">News</a></li>
           <li><a href="#link"         data-it="Link"         data-en="Links">Link</a></li>
           <li><a href="#join" onclick="showJoin(event)" data-it="Lavora con Noi" data-en="Join Our Team">Lavora con Noi</a></li>
@@ -975,6 +975,15 @@
       detail.style.display = 'block';
       setTimeout(function() { detail.classList.add('open'); }, 10);
     }
+  }
+
+  function showTeam(e) {
+    e.preventDefault();
+    var section = document.getElementById('team');
+    section.style.display = 'block';
+    setTimeout(function() {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }, 10);
   }
 
   function showJoin(e) {

@@ -432,6 +432,8 @@ section {
 
 .bg-light { background: var(--light); }
 
+#team { display: none; }
+
 .bg-steel { background: #ffffff; }
 
 /* ===========================
