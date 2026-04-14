@@ -360,8 +360,10 @@ section {
 }
 
 .section-header h2 {
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  letter-spacing: 3px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
