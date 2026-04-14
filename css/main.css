@@ -898,7 +898,7 @@ section {
 
 .news-card .news-img-logo[alt="Engage"] {
   background: transparent;
-  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(2.5) brightness(0.55);
+  filter: grayscale(1) sepia(1) hue-rotate(195deg) saturate(2) brightness(0.38);
 }
 
 .news-card .news-img-placeholder {
