@@ -670,50 +670,41 @@ section {
   box-shadow: 0 12px 30px rgba(3,20,48,0.12);
 }
 
-.deal-logo-area {
-  height: 110px;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-size: 72% auto;
-  background-position: center 38%;
-  border-bottom: 1px solid #f0f2f6;
-  filter: grayscale(1) opacity(0.75);
-  transition: filter 0.25s ease;
+.deal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(1) opacity(0.82);
+  transition: filter 0.28s ease;
 }
-.deal-tile:hover .deal-logo-area {
+.deal-tile:hover .deal-img {
   filter: grayscale(0) opacity(1);
 }
 
 .deal-body {
-  padding: 14px 16px 18px;
+  padding: 10px 14px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  flex: 1;
+  align-items: center;
+  gap: 4px;
+  border-top: 1px solid #f0f2f6;
 }
 
-.deal-desc {
+.deal-badge {
   font-family: 'Montserrat', sans-serif;
-  font-size: 11.5px;
-  color: #333;
-  line-height: 1.65;
-  flex: 1;
-  text-align: center;
-}
-
-.deal-footer {
-  padding-top: 10px;
-  border-top: 1px solid #eef0f4;
-  margin-top: 2px;
-  text-align: center;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #444;
 }
 
 .deal-year {
   font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  color: #999;
-  letter-spacing: 0.06em;
+  font-size: 10.5px;
+  font-weight: 400;
+  color: #aaa;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 1024px) { .deals-grid { grid-template-columns: repeat(2, 1fr); } }
