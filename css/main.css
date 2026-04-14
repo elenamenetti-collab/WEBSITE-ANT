@@ -1125,12 +1125,15 @@ section {
 #link .section-header p { color: rgba(255,255,255,0.6); }
 
 .link-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .link-card {
+  width: 100%;
+  max-width: 380px;
   background: rgba(255,255,255,0.05);
   transition: background 0.3s;
 }
