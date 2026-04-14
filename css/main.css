@@ -84,13 +84,13 @@ ul { list-style: none; }
 }
 
 #navbar .logo img {
-  height: 48px;
-  width: 48px;
+  height: 64px;
+  width: 64px;
   object-fit: contain;
   transition: height 0.3s, width 0.3s;
 }
 
-#navbar.scrolled .logo img { height: 38px; width: 38px; }
+#navbar.scrolled .logo img { height: 50px; width: 50px; }
 
 #navbar nav {
   display: flex;
