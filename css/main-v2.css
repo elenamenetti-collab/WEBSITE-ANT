@@ -268,12 +268,26 @@ body.sidebar-open { overflow: hidden; }
 }
 
 /* ===========================
-   TEAM — portrait format
+   TEAM — portrait format, smaller cards
    =========================== */
+#team .team-grid {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 780px;
+  gap: 20px 16px;
+}
+
 #team .team-card .photo-wrap {
   aspect-ratio: 3 / 4;
 }
 
 #team .team-card .photo {
   object-position: 50% 15%;
+}
+
+@media (max-width: 1024px) {
+  #team .team-grid { grid-template-columns: repeat(4, 1fr); max-width: 100%; }
+}
+
+@media (max-width: 600px) {
+  #team .team-grid { grid-template-columns: repeat(3, 1fr); }
 }
