@@ -47,7 +47,14 @@
 #navbar.scrolled .logo-v2 img { height: 36px; }
 
 
-/* Right side: lang + hamburger */
+/* Left side: hamburger + logo */
+.nav-left-v2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Right side: lang */
 .nav-right-v2 {
   display: flex;
   align-items: center;
@@ -83,11 +90,9 @@
   display: block;
   width: 26px;
   height: 1.5px;
-  background: var(--white);
+  background: var(--navy);
   transition: background 0.3s;
 }
-
-#navbar.scrolled .hamburger span { background: var(--navy); }
 
 /* ===========================
    SIDEBAR
