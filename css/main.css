@@ -632,14 +632,13 @@ section {
 /* ---- Deal tile ---- */
 .deal-tile {
   background: #ffffff;
-  border: 1px solid #e2e6ec;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   transition: box-shadow 0.22s ease, transform 0.22s ease;
 }
 .deal-tile:hover {
-  box-shadow: 0 8px 28px rgba(3,20,48,0.10);
+  box-shadow: 0 8px 32px rgba(3,20,48,0.12);
   transform: translateY(-4px);
 }
 
@@ -650,14 +649,18 @@ section {
   background: #ffffff;
   display: block;
   padding: 12px;
+  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(5) brightness(0.45) contrast(1.2);
+  transition: filter 0.3s ease;
+}
+.deal-tile:hover .deal-img {
+  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(5) brightness(0.55) contrast(1.2);
 }
 
 .deal-body {
-  padding: 12px 14px 14px;
-  border-top: 1px solid #f0f2f6;
+  padding: 10px 12px 14px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
 .deal-badge {
@@ -680,7 +683,7 @@ section {
 @media (max-width: 1024px) { .deals-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px)  {
   .deals-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .deal-body { padding: 8px 10px 10px; }
+  .deal-body { padding: 6px 8px 10px; }
   .deal-extra { display: none; }
   .deals-grid.expanded .deal-extra { display: flex; }
 }
