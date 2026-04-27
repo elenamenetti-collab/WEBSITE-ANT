@@ -123,7 +123,7 @@
   <div class="container">
     <div class="section-header fade-in">
       <div class="gold-line"></div>
-      <p class="section-subtitle">We offer a wide range of advisory services to clients in some of the most active industry sectors</p>
+      <p class="section-subtitle" data-it="Offriamo un'ampia gamma di servizi di advisory a clienti nei settori più dinamici del mercato" data-en="We offer a wide range of advisory services to clients in some of the most active industry sectors">Offriamo un'ampia gamma di servizi di advisory a clienti nei settori più dinamici del mercato</p>
     </div>
 
     <div class="services-grid services-grid-4">
@@ -224,7 +224,7 @@
 <section id="track-record">
   <div class="container">
     <div class="section-header fade-in">
-      <h2 data-it="Our Advisory Transaction"  data-en="Our Advisory Transaction">Our Advisory Transaction</h2>
+      <h2 data-it="Le Nostre Advisory Transaction" data-en="Our Advisory Transaction">Le Nostre Advisory Transaction</h2>
       <div class="gold-line"></div>
     </div>
 
@@ -295,7 +295,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-09.png" alt="Gruppo Flema / Bridgestone" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">M&amp;A Advisory</span>
@@ -303,7 +303,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-10.png" alt="Univergomma / Maxtyre" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">M&amp;A Advisory</span>
@@ -311,7 +311,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-11.png" alt="Futuris Isontina / Motus Energy" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">M&amp;A Advisory</span>
@@ -319,7 +319,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-17.png" alt="Rubber Conversion" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Financial Advisory</span>
@@ -327,7 +327,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-12.png" alt="Innovando / Dafne" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">M&amp;A Advisory</span>
@@ -335,7 +335,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-18.png" alt="Vibrowest" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Financial Advisory</span>
@@ -343,7 +343,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-13.png" alt="La Murrina Group" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Financial Advisory</span>
@@ -351,7 +351,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-14.png" alt="Portale Sardegna" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">M&amp;A Advisory</span>
@@ -359,7 +359,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-15.png" alt="Danielli" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Debt Advisory</span>
@@ -367,7 +367,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-16.png" alt="Supermercato24" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Private Placement</span>
@@ -375,7 +375,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-19.png" alt="Delta Contract" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Financial Advisory</span>
@@ -383,7 +383,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-20.png" alt="La Murrina Murano" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Debt Advisory</span>
@@ -391,7 +391,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-21.png" alt="SFE" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Debt Advisory</span>
@@ -399,7 +399,7 @@
         </div>
       </div>
 
-      <div class="deal-tile">
+      <div class="deal-tile deal-extra">
         <img src="images/deal-22.png" alt="Zonca International" class="deal-img" />
         <div class="deal-body">
           <span class="deal-badge">Financial Advisory</span>
@@ -407,6 +407,13 @@
         </div>
       </div>
 
+    </div>
+
+    <!-- Bottone "Visualizza altro" — solo mobile -->
+    <div class="deals-toggle-wrap">
+      <button id="deals-toggle-btn" class="btn deals-toggle-btn"
+        data-it="Visualizza tutte le transazioni" data-en="View all transactions"
+        onclick="toggleDeals()">View all transactions</button>
     </div>
 
   </div>
@@ -511,14 +518,14 @@
 <section id="join" class="bg-navy">
   <div class="container">
     <div class="section-header fade-in">
-      <h2>Join our team of exceptional professionals.</h2>
+      <h2 data-it="Entra a far parte del nostro team di professionisti d'eccellenza." data-en="Join our team of exceptional professionals.">Entra a far parte del nostro team di professionisti d'eccellenza.</h2>
       <div class="gold-line"></div>
-      <p class="join-tagline">We offer opportunities that stimulate, reward, and ultimately, help you thrive.</p>
+      <p class="join-tagline" data-it="Offriamo opportunità stimolanti, gratificanti e capaci di valorizzare al meglio il tuo potenziale." data-en="We offer opportunities that stimulate, reward, and ultimately, help you thrive.">Offriamo opportunità stimolanti, gratificanti e capaci di valorizzare al meglio il tuo potenziale.</p>
     </div>
     <div class="fade-in">
       <ul class="positions-list">
         <li>
-          <span class="position-title">Intern &amp; Graduate Recruitment</span>
+          <span class="position-title" data-it="Recruiting Intern &amp; Neolaureati" data-en="Intern &amp; Graduate Recruitment">Recruiting Intern &amp; Neolaureati</span>
           <a href="mailto:human.resources@antcapital.it" class="position-email">human.resources@antcapital.it</a>
         </li>
       </ul>
@@ -988,6 +995,18 @@
       btn.style.color = '';
       e.target.reset();
     }, 3000);
+  }
+
+  function toggleDeals() {
+    var grid = document.querySelector('.deals-grid');
+    var btn = document.getElementById('deals-toggle-btn');
+    var expanded = grid.classList.toggle('expanded');
+    if (expanded) {
+      btn.textContent = currentLang === 'it' ? 'Mostra meno' : 'Show less';
+    } else {
+      btn.textContent = currentLang === 'it' ? 'Visualizza tutte le transazioni' : 'View all transactions';
+      document.getElementById('track-record').scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   function showAbout() {
