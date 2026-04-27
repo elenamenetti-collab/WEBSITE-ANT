@@ -623,10 +623,13 @@ section {
   font-weight: 700;
 }
 
+#track-record { background: #ffffff; }
+
 .deals-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  background: #ffffff;
 }
 
 /* ---- Deal tile ---- */
@@ -649,11 +652,11 @@ section {
   background: #ffffff;
   display: block;
   padding: 12px;
-  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(5) brightness(0.45) contrast(1.2);
+  filter: grayscale(1) contrast(1.15) brightness(0.85);
   transition: filter 0.3s ease;
 }
 .deal-tile:hover .deal-img {
-  filter: grayscale(1) sepia(1) hue-rotate(185deg) saturate(5) brightness(0.55) contrast(1.2);
+  filter: grayscale(1) contrast(1.3) brightness(0.75);
 }
 
 .deal-body {
