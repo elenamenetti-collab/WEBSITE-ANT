@@ -905,7 +905,7 @@ section {
    NEWS / COMUNICATI
    =========================== */
 #news {
-  background: var(--light);
+  background: #ffffff;
 }
 
 .news-grid {
