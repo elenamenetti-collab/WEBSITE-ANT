@@ -649,6 +649,7 @@ section {
   position: relative;
   background: #ffffff;
   overflow: hidden;
+  isolation: isolate;
 }
 .deal-img-wrap::after {
   content: '';
@@ -657,6 +658,7 @@ section {
   background: #031430;
   mix-blend-mode: screen;
   pointer-events: none;
+  z-index: 1;
 }
 
 .deal-img {
@@ -665,8 +667,10 @@ section {
   object-fit: contain;
   background: #ffffff;
   display: block;
-  padding: 12px;
+  padding: 16px;
   filter: grayscale(1);
+  position: relative;
+  z-index: 0;
 }
 
 .deal-body {
