@@ -629,15 +629,13 @@ section {
   gap: 16px;
 }
 
-/* ---- Deal tile — text card ---- */
+/* ---- Deal tile ---- */
 .deal-tile {
   background: #ffffff;
   border: 1px solid #e2e6ec;
-  padding: 22px 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-height: 180px;
+  overflow: hidden;
   transition: box-shadow 0.22s ease, transform 0.22s ease;
 }
 .deal-tile:hover {
@@ -645,58 +643,44 @@ section {
   transform: translateY(-4px);
 }
 
-.deal-card-top {
+.deal-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #ffffff;
+  display: block;
+  padding: 12px;
+}
+
+.deal-body {
+  padding: 12px 14px 14px;
+  border-top: 1px solid #f0f2f6;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .deal-badge {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--navy);
-  border: 1px solid var(--navy);
-  padding: 3px 8px;
 }
 
 .deal-year {
   font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  color: #999;
+  font-size: 10px;
+  font-weight: 400;
+  color: #aaa;
   letter-spacing: 1px;
-}
-
-.deal-accent {
-  width: 28px;
-  height: 1px;
-  background: #c8a84b;
-}
-
-.deal-parties {
-  font-family: 'Kayak', 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.4;
-}
-
-.deal-role {
-  font-size: 11px;
-  color: #777;
-  font-style: italic;
-  line-height: 1.5;
-  margin-top: auto;
 }
 
 @media (max-width: 1024px) { .deals-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px)  {
   .deals-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .deal-tile { padding: 14px 16px; min-height: 150px; gap: 8px; }
-  .deal-parties { font-size: 12px; }
+  .deal-body { padding: 8px 10px 10px; }
   .deal-extra { display: none; }
   .deals-grid.expanded .deal-extra { display: flex; }
 }
