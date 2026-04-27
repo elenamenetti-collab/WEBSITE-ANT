@@ -645,6 +645,20 @@ section {
   transform: translateY(-4px);
 }
 
+.deal-img-wrap {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+.deal-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #031430;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
 .deal-img {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -652,15 +666,12 @@ section {
   background: #ffffff;
   display: block;
   padding: 12px;
-  filter: grayscale(1) contrast(1.15) brightness(0.85);
-  transition: filter 0.3s ease;
-}
-.deal-tile:hover .deal-img {
-  filter: grayscale(1) contrast(1.3) brightness(0.75);
+  filter: grayscale(1);
 }
 
 .deal-body {
   padding: 10px 12px 14px;
+  border: none;
   display: flex;
   flex-direction: column;
   gap: 3px;
