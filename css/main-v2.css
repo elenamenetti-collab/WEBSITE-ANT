@@ -282,11 +282,12 @@ body.sidebar-open { overflow: hidden; }
 }
 
 #team .team-card .photo-wrap {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4.5;
+  width: 88%;
 }
 
 #team .team-card .photo {
-  object-position: 50% 15%;
+  object-position: 50% 50%;
 }
 
 @media (max-width: 1024px) {
