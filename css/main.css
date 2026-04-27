@@ -1064,6 +1064,7 @@ section {
 
 .news-subsection-header {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .news-subsection-header h3 {
@@ -1076,7 +1077,7 @@ section {
   margin-bottom: 16px;
 }
 
-.news-subsection-header .gold-line { margin: 0 0 0; }
+.news-subsection-header .gold-line { margin: 0 auto; }
 
 .news-source {
   color: var(--navy) !important;
