@@ -326,7 +326,7 @@ body.sidebar-open { overflow: hidden; }
 .dc-gold-line {
   width: 26px;
   height: 1px;
-  background: #c9a84c;
+  background: var(--navy);
   margin: 0 auto 16px;
 }
 
