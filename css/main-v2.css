@@ -377,14 +377,8 @@ body.sidebar-open { overflow: hidden; }
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(1) sepia(1) hue-rotate(200deg) saturate(4) contrast(4);
   mix-blend-mode: multiply;
   margin: 0;
-}
-
-/* Logo con sfondo scuro: invert prima del filtro navy */
-.dc-logo[alt="Commerciale Siderurgica Bresciana"] {
-  filter: invert(1) grayscale(1) sepia(1) hue-rotate(200deg) saturate(4) contrast(4);
 }
 
 .dc-logo[alt="Slitti"] {
