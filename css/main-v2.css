@@ -377,6 +377,7 @@ body.sidebar-open { overflow: hidden; }
   width: auto;
   height: auto;
   object-fit: contain;
+  filter: grayscale(1) brightness(0.3) sepia(1) hue-rotate(200deg) saturate(6);
   mix-blend-mode: multiply;
   margin: 0;
 }
