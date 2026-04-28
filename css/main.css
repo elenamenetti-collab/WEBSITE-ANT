@@ -942,8 +942,9 @@ section {
 }
 
 .news-card .news-img-logo[alt="Engage"] {
-  background: transparent;
-  filter: brightness(0) invert(1) sepia(1) brightness(0.5) saturate(30) hue-rotate(145deg) brightness(0.2);
+  background: #ffffff;
+  filter: grayscale(1) brightness(0.3) sepia(1) hue-rotate(200deg) saturate(6);
+  mix-blend-mode: multiply;
 }
 
 .news-card .news-img-placeholder {
