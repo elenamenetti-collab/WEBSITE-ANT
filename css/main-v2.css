@@ -310,66 +310,66 @@ body.sidebar-open { overflow: hidden; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
-  padding: 24px 16px 20px;
+  padding: 28px 20px 24px;
   aspect-ratio: 3 / 4;
 }
 
 .dc-type {
   font-family: 'Montserrat', sans-serif;
-  font-size: 7.5px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #031430;
-  margin: 0 0 12px;
+  margin: 0;
 }
 
 .dc-gold-line {
-  width: 26px;
+  width: 28px;
   height: 1px;
   background: #031430;
-  margin: 0 auto 16px;
+  margin: 0 auto;
 }
 
 .dc-role {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 17px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   color: #031430;
-  margin: 0 0 6px;
-  line-height: 1.4;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .dc-name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
   color: #031430;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin: 0 0 18px;
-  line-height: 1.35;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .dc-desc {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 13px;
+  font-size: 16px;
   font-style: italic;
   color: #031430;
-  line-height: 1.55;
-  margin: 0 0 16px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .dc-date {
   font-family: 'Montserrat', sans-serif;
-  font-size: 7.5px;
+  font-size: 9px;
   color: #031430;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: auto;
-  padding-top: 0;
+  margin: 0;
 }
 
 /* ===========================
