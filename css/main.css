@@ -860,9 +860,9 @@ section {
 /* ===========================
    JOIN OUR TEAM
    =========================== */
-#join { display: none; background: var(--navy); }
-#join .section-header h2 { color: var(--white); font-size: clamp(1.4rem, 2.2vw, 2rem); }
-#join .section-header p { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 640px; margin-top: 16px; }
+#join { display: none; background: #ffffff; }
+#join .section-header h2 { color: var(--navy); font-size: clamp(1.4rem, 2.2vw, 2rem); }
+#join .section-header p { color: rgba(3,20,48,0.6); font-size: 1.05rem; max-width: 640px; margin-top: 16px; }
 
 .positions-list {
   list-style: none;
@@ -1000,7 +1000,7 @@ section {
 /* ===========================
    PARTNERSHIP
    =========================== */
-#partnership { display: none; }
+#partnership { display: none; background: #ffffff; }
 
 .partnership-grid {
   display: grid;
