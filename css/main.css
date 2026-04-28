@@ -878,7 +878,7 @@ section {
   align-items: center;
   gap: 10px;
   padding: 28px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(3,20,48,0.1);
   text-align: center;
 }
 
@@ -887,19 +887,19 @@ section {
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.9);
+  color: var(--navy);
 }
 
 .position-email {
   font-size: 15px;
   font-weight: 400;
-  color: rgba(255,255,255,0.65);
+  color: rgba(3,20,48,0.6);
   text-decoration: none;
   letter-spacing: 0.2px;
   transition: color 0.2s;
 }
 
-.position-email:hover { color: var(--white); }
+.position-email:hover { color: var(--navy); }
 
 /* ===========================
    NEWS / COMUNICATI
