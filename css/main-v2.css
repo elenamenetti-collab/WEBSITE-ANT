@@ -382,8 +382,7 @@ body.sidebar-open { overflow: hidden; }
   margin: 0;
 }
 
-/* Loghi con sfondo scuro/colorato: invert prima del filtro navy */
-.dc-logo[alt="Lombarda Acciai"],
+/* Logo con sfondo scuro: invert prima del filtro navy */
 .dc-logo[alt="Commerciale Siderurgica Bresciana"] {
   filter: invert(1) grayscale(1) sepia(1) hue-rotate(200deg) saturate(4) contrast(4);
 }
