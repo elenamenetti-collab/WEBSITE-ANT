@@ -268,6 +268,110 @@ body.sidebar-open { overflow: hidden; }
 }
 
 /* ===========================
+   DEAL TILE V2 — tombstone / editorial
+   =========================== */
+
+/* Grid: colonne senza gap, solo linea verticale */
+#track-record .deals-grid {
+  column-gap: 0;
+  row-gap: 52px;
+  background: transparent;
+}
+
+/* Tile: nessun box, solo bordo destro come separatore */
+#track-record .deal-tile {
+  border: none;
+  box-shadow: none;
+  border-right: 1px solid rgba(3,20,48,0.09);
+  background: transparent;
+  padding: 0;
+}
+
+#track-record .deal-tile:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+/* Nessun bordo sull'ultima colonna */
+#track-record .deal-tile:nth-child(4n) { border-right: none; }
+
+@media (max-width: 1024px) {
+  #track-record .deal-tile:nth-child(4n) { border-right: 1px solid rgba(3,20,48,0.09); }
+  #track-record .deal-tile:nth-child(2n) { border-right: none; }
+}
+
+@media (max-width: 600px) {
+  #track-record .deals-grid { row-gap: 36px; }
+  #track-record .deal-tile:nth-child(2n) { border-right: none; }
+}
+
+/* Contenuto tombstone */
+.deal-tile-v2 {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 22px 0;
+  min-height: 260px;
+}
+
+.dc-type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin: 0 0 12px;
+}
+
+.dc-gold-line {
+  width: 26px;
+  height: 1px;
+  background: #c9a84c;
+  margin-bottom: 16px;
+}
+
+.dc-role {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10.5px;
+  font-style: italic;
+  color: rgba(3,20,48,0.50);
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.dc-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  line-height: 1.35;
+}
+
+.dc-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  font-style: italic;
+  color: rgba(3,20,48,0.45);
+  line-height: 1.55;
+  margin: 0 0 16px;
+  flex-grow: 1;
+}
+
+.dc-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7.5px;
+  color: rgba(3,20,48,0.35);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: 13px;
+  border-top: 1px solid rgba(3,20,48,0.07);
+}
+
+/* ===========================
    TEAM — always visible
    =========================== */
 #team { display: block; }
