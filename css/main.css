@@ -943,7 +943,7 @@ section {
 
 .news-card .news-img-logo[alt="Engage"] {
   background: #ffffff;
-  filter: grayscale(1) brightness(0.3) sepia(1) hue-rotate(200deg) saturate(6);
+  filter: grayscale(1) sepia(1) hue-rotate(200deg) saturate(6) contrast(8);
   mix-blend-mode: multiply;
 }
 
