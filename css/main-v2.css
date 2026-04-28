@@ -336,6 +336,7 @@ body.sidebar-open { overflow: hidden; }
   font-family: 'Cormorant Garamond', serif;
   font-size: 17px;
   font-style: normal;
+  font-weight: 700;
   color: #031430;
   margin: 0 0 6px;
   line-height: 1.4;
@@ -344,7 +345,7 @@ body.sidebar-open { overflow: hidden; }
 .dc-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 300;
   color: #031430;
   letter-spacing: 1px;
   text-transform: uppercase;
