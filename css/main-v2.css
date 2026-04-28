@@ -310,7 +310,6 @@ body.sidebar-open { overflow: hidden; }
   display: flex;
   flex-direction: column;
   padding: 4px 22px 0;
-  min-height: 260px;
 }
 
 .dc-type {
@@ -321,13 +320,14 @@ body.sidebar-open { overflow: hidden; }
   text-transform: uppercase;
   color: var(--navy);
   margin: 0 0 12px;
+  text-align: center;
 }
 
 .dc-gold-line {
   width: 26px;
   height: 1px;
   background: #c9a84c;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 
 .dc-role {
@@ -369,6 +369,7 @@ body.sidebar-open { overflow: hidden; }
   margin-top: auto;
   padding-top: 13px;
   border-top: 1px solid rgba(3,20,48,0.07);
+  text-align: center;
 }
 
 /* ===========================
