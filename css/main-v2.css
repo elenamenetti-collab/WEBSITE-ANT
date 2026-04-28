@@ -335,7 +335,7 @@ body.sidebar-open { overflow: hidden; }
 .dc-role {
   font-family: 'Cormorant Garamond', serif;
   font-size: 17px;
-  font-style: italic;
+  font-style: normal;
   color: #031430;
   margin: 0 0 6px;
   line-height: 1.4;
