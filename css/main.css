@@ -941,10 +941,17 @@ section {
   transition: filter 0.3s ease;
 }
 
-.news-card .news-img-logo[alt="Engage"] {
+.engage-text-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #031430;
   background: #ffffff;
-  filter: grayscale(1) sepia(1) hue-rotate(200deg) saturate(6) contrast(8);
-  mix-blend-mode: multiply;
+  filter: none;
 }
 
 .news-card .news-img-placeholder {
