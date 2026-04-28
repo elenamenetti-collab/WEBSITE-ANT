@@ -326,9 +326,9 @@ body.sidebar-open { overflow: hidden; }
 
 .dc-type {
   font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #031430;
   margin: 0;
@@ -354,7 +354,7 @@ body.sidebar-open { overflow: hidden; }
 .dc-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
   color: #031430;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -364,8 +364,9 @@ body.sidebar-open { overflow: hidden; }
 
 .dc-desc {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
+  font-weight: 600;
   color: #031430;
   line-height: 1.5;
   margin: 0;
@@ -387,7 +388,8 @@ body.sidebar-open { overflow: hidden; }
 
 .dc-date {
   font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
+  font-size: 11px;
+  font-weight: 600;
   color: #031430;
   letter-spacing: 2px;
   text-transform: uppercase;
