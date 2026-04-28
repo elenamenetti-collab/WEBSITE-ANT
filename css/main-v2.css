@@ -388,6 +388,10 @@ body.sidebar-open { overflow: hidden; }
   filter: invert(1) grayscale(1) sepia(1) hue-rotate(200deg) saturate(4) contrast(4);
 }
 
+.dc-logo[alt="Slitti"] {
+  max-height: 90px;
+}
+
 .dc-date {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
