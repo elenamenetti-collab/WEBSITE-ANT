@@ -862,7 +862,7 @@ section {
    =========================== */
 #join { display: none; background: #ffffff; }
 #join .section-header h2 { color: var(--navy); }
-#join .section-header p { color: rgba(3,20,48,0.6); font-size: 1.05rem; max-width: 640px; margin-top: 16px; }
+#join .section-header p { color: rgba(3,20,48,0.6); font-size: 1.25rem; max-width: 640px; margin-top: 16px; }
 
 .positions-list {
   list-style: none;
@@ -883,7 +883,7 @@ section {
 }
 
 .position-title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -891,7 +891,7 @@ section {
 }
 
 .position-email {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   color: rgba(3,20,48,0.6);
   text-decoration: none;
