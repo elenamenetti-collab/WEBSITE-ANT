@@ -363,6 +363,16 @@ body.sidebar-open { overflow: hidden; }
   margin: 0;
 }
 
+.dc-logo {
+  max-width: 70%;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(80%) saturate(1500%) hue-rotate(197deg) brightness(0.85);
+  margin: 0;
+}
+
 .dc-date {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
