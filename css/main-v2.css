@@ -311,7 +311,7 @@ body.sidebar-open { overflow: hidden; }
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 18px 0;
+  padding: 20px 16px 0;
 }
 
 .dc-type {
@@ -320,33 +320,32 @@ body.sidebar-open { overflow: hidden; }
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--navy);
+  color: #031430;
   margin: 0 0 12px;
-  text-align: center;
 }
 
 .dc-gold-line {
   width: 26px;
   height: 1px;
-  background: var(--navy);
+  background: #031430;
   margin: 0 auto 16px;
 }
 
 .dc-role {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14px;
+  font-size: 17px;
   font-style: italic;
-  color: rgba(3,20,48,0.55);
-  margin: 0 0 5px;
+  color: #031430;
+  margin: 0 0 6px;
   line-height: 1.4;
 }
 
 .dc-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  font-weight: 600;
-  color: var(--navy);
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #031430;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0 0 18px;
   line-height: 1.35;
@@ -354,24 +353,23 @@ body.sidebar-open { overflow: hidden; }
 
 .dc-desc {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 11px;
+  font-size: 13px;
   font-style: italic;
-  color: rgba(3,20,48,0.45);
+  color: #031430;
   line-height: 1.55;
   margin: 0 0 16px;
-  flex-grow: 1;
 }
 
 .dc-date {
   font-family: 'Montserrat', sans-serif;
   font-size: 7.5px;
-  color: rgba(3,20,48,0.35);
+  color: #031430;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: auto;
   padding-top: 13px;
-  border-top: 1px solid rgba(3,20,48,0.07);
-  text-align: center;
+  align-self: stretch;
+  border-top: 1px solid rgba(3,20,48,0.12);
 }
 
 /* ===========================
