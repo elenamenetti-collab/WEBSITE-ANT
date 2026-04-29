@@ -316,6 +316,9 @@ body.sidebar-open { overflow: hidden; }
     padding: 32px 24px;
     gap: 16px;
   }
+  /* Show all tiles on mobile — v2 has no toggle pattern */
+  #track-record .deal-extra { display: flex !important; }
+  .deals-toggle-wrap { display: none !important; }
 }
 
 /* Contenuto tombstone */
@@ -426,6 +429,8 @@ body.sidebar-open { overflow: hidden; }
 #team .team-card .photo-wrap {
   aspect-ratio: 4 / 4.5;
   width: 88%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #team .team-card .photo {
