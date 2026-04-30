@@ -444,3 +444,10 @@ body.sidebar-open { overflow: hidden; }
 @media (max-width: 600px) {
   #team .team-grid { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* Leaflet map container */
+#leaflet-map {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
