@@ -271,14 +271,15 @@ body.sidebar-open { overflow: hidden; }
    DEAL TILE V2 — tombstone / editorial
    =========================== */
 
-/* Grid: colonne senza gap, solo linea verticale */
+/* Grid: 3 colonne senza gap, solo linea verticale */
 #track-record .deals-grid {
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 0;
-  row-gap: 52px;
+  row-gap: 0;
   background: transparent;
 }
 
-/* Tile: nessun box, solo bordo destro come separatore */
+/* Tile: nessun box, solo bordi come separatori */
 #track-record .deal-tile {
   border: none;
   box-shadow: none;
@@ -293,11 +294,12 @@ body.sidebar-open { overflow: hidden; }
   transform: none;
 }
 
-/* Nessun bordo sull'ultima colonna */
-#track-record .deal-tile:nth-child(4n) { border-right: none; }
+/* Nessun bordo destro sull'ultima colonna */
+#track-record .deal-tile:nth-child(3n) { border-right: none; }
 
 @media (max-width: 1024px) {
-  #track-record .deal-tile:nth-child(4n) { border-right: 1px solid rgba(3,20,48,0.09); }
+  #track-record .deals-grid { grid-template-columns: repeat(2, 1fr); }
+  #track-record .deal-tile:nth-child(3n) { border-right: 1px solid rgba(3,20,48,0.09); }
   #track-record .deal-tile:nth-child(2n) { border-right: none; }
   .deal-tile-v2 { aspect-ratio: unset; min-height: 320px; }
 }
@@ -329,7 +331,7 @@ body.sidebar-open { overflow: hidden; }
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 28px 36px 24px;
+  padding: 36px 48px 32px;
   aspect-ratio: 3 / 4;
 }
 
