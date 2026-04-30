@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ant Capital · 10 Anni · v3</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,600&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{
+  height:100%;
+  background:#0d0d0e;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  font-family:"Montserrat",sans-serif;
+}
+
+/* ─── PALETTE (dal sito v2) ─────────────────
+   #ffffff  white
+   #eef1f6  light grey
+   #d8e0ea  steel light
+   #b8c8d8  steel mid
+   #8aaabf  blue mid
+   #4d7090  blue steel
+   #1a3a5c  blue night
+   #031430  navy
+   ──────────────────────────────────────────── */
+
+/* ─── GRADIENT hero (identico S1) ─────────── */
+.gb{background:linear-gradient(100deg,
+  #f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,
+  #bcccd8 50%,#96b2c4 64%,
+  #7096ae 80%,#4d7090 100%)}
+
+/* ─── FRAME ──────────────────────────────── */
+.F{
+  width:min(900px,98vw);
+  aspect-ratio:16/9;
+  position:relative;
+  overflow:hidden;
+}
+
+/* ─── SCENES ─────────────────────────────── */
+.sc{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:4% 7%;
+  opacity:0;pointer-events:none;
+  transform:translateY(10px);
+  transition:opacity .4s ease, transform .4s ease;
+  z-index:2;
+}
+.sc.on{opacity:1;pointer-events:all;transform:translateY(0)}
+
+/* ─── KEYFRAMES ──────────────────────────── */
+@keyframes fu  {from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fl  {from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fi  {from{opacity:0}to{opacity:1}}
+@keyframes si  {from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes clip{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0% 0 0)}}
+@keyframes rise{from{opacity:0;transform:translateY(26px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes lw  {from{width:0}to{width:var(--w,50px)}}
+
+/* ════════════════════════════════════════════
+   S1 · APERTURA
+   ════════════════════════════════════════════ */
+#s1{
+  background:linear-gradient(100deg,
+    #f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,
+    #bcccd8 50%,#96b2c4 64%,
+    #7096ae 80%,#4d7090 100%);
+  flex-direction:row;align-items:center;
+  justify-content:space-between;padding:0 8%;
+}
+#s1 .left{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+#s1 .logo-w{height:clamp(26px,4vw,38px);width:auto;animation:fl .3s ease .15s both}
+#s1 .sub1{font-size:clamp(9px,1.3vw,13px);font-weight:600;letter-spacing:.35em;color:rgba(3,20,48,.45);text-transform:uppercase;animation:fl .3s ease .4s both}
+#s1 .sub2{font-size:clamp(8px,1.1vw,11px);font-weight:400;letter-spacing:.18em;color:rgba(3,20,48,.35);animation:fl .3s ease .55s both}
+#s1 .right{display:flex;flex-direction:column;align-items:center;gap:4px}
+#s1 .n10{font-size:clamp(78px,13.5vw,130px);font-weight:600;color:#031430;line-height:.85;letter-spacing:-.04em;animation:rise .4s cubic-bezier(.22,1,.36,1) .25s both}
+#s1 .anni{font-size:clamp(11px,1.8vw,17px);font-weight:300;letter-spacing:.55em;color:rgba(3,20,48,.55);text-transform:uppercase;animation:fu .3s ease .65s both}
+#s1 .range{font-size:clamp(9px,1.3vw,12px);color:#8aaabf;letter-spacing:.2em;font-weight:600;animation:fu .3s ease .8s both}
+.gline{height:1px;background:#4d7090;width:0;animation:lw .5s ease forwards}
+
+/* ════════════════════════════════════════════
+   S2 · CLAIM  (gradient bg)
+   ════════════════════════════════════════════ */
+#s2{
+  background:linear-gradient(100deg,
+    #f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,
+    #bcccd8 50%,#96b2c4 64%,
+    #7096ae 80%,#4d7090 100%);
+  align-items:flex-start;padding-left:9%;
+}
+#s2 .s2-l1{
+  font-family:"Montserrat",sans-serif;font-weight:300;
+  font-size:clamp(28px,5vw,52px);color:#031430;line-height:1.05;
+  animation:clip .16s ease 0s both;
+  text-shadow:0 1px 8px rgba(255,255,255,.35);
+}
+#s2 .s2-l2{
+  font-family:"Montserrat",sans-serif;font-weight:300;
+  font-size:clamp(28px,5vw,52px);color:#031430;line-height:1.05;
+  animation:clip .16s ease .14s both;
+  text-shadow:0 1px 8px rgba(255,255,255,.35);
+}
+#s2 .s2-l3{
+  font-family:"Montserrat",sans-serif;font-weight:300;
+  font-size:clamp(18px,3.2vw,34px);color:rgba(3,20,48,.62);line-height:1.05;
+  animation:clip .16s ease .28s both;
+  text-shadow:0 1px 6px rgba(255,255,255,.25);
+}
+
+/* ════════════════════════════════════════════
+   S3 · DEAL CONCLUSI
+   Gradient bg · lista a comparsa
+   ════════════════════════════════════════════ */
+#s3{
+  background:linear-gradient(100deg,
+    #f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,
+    #bcccd8 50%,#96b2c4 64%,
+    #7096ae 80%,#4d7090 100%);
+  align-items:flex-start;justify-content:flex-start;
+  padding:4.5% 8%;
+}
+.dc-hd{
+  font-size:clamp(11px,1.5vw,15px);
+  letter-spacing:.28em;color:rgba(3,20,48,.55);
+  text-transform:uppercase;font-weight:600;
+  margin-bottom:clamp(7px,1.3vw,12px);
+  animation:fi .2s ease .05s both;
+  width:100%;
+}
+.dc-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:clamp(14px,2.8vw,28px);
+  row-gap:0;
+  width:100%;
+}
+.dc-row{
+  display:flex;align-items:center;gap:5px;
+  padding:clamp(2.5px,.48vw,4.5px) 0;
+  border-bottom:1px solid rgba(3,20,48,.055);
+  opacity:0;transform:translateX(-8px);
+  transition:opacity .18s ease,transform .18s ease;
+}
+.dc-row.on{opacity:1;transform:translateX(0)}
+.dc-yr{
+  font-size:clamp(6px,.75vw,7.5px);
+  color:rgba(3,20,48,.25);font-weight:700;
+  min-width:20px;flex-shrink:0;
+}
+.dc-name{
+  font-size:clamp(7px,.96vw,9.5px);
+  color:#031430;font-weight:600;flex:1;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.dc-badge{
+  font-size:clamp(5px,.65vw,6.5px);
+  letter-spacing:.07em;color:#4d7090;font-weight:700;
+  text-transform:uppercase;
+  background:rgba(77,112,144,.09);
+  padding:1px 4px;border-radius:2px;
+  white-space:nowrap;flex-shrink:0;
+}
+.dc-tagline{
+  font-size:clamp(9px,1.3vw,13px);
+  font-weight:300;color:rgba(3,20,48,.55);
+  margin-bottom:clamp(6px,1.1vw,10px);
+  animation:fu .28s ease .18s both;
+  width:100%;
+}
+.dc-foot{
+  width:100%;margin-top:clamp(5px,.9vw,9px);
+  display:flex;align-items:baseline;gap:7px;
+  opacity:0;transform:translateY(7px);
+  transition:opacity .22s,transform .22s;
+}
+.dc-foot.on{opacity:1;transform:translateY(0)}
+.dc-big{font-size:clamp(18px,3.2vw,32px);font-weight:900;color:#031430;letter-spacing:-.03em}
+.dc-sub{font-size:clamp(9px,1.2vw,12px);color:rgba(3,20,48,.5);letter-spacing:.04em;font-weight:300}
+
+/* S4 KPI rimossa */
+
+/* ════════════════════════════════════════════
+   S5 · TEAM  (gradient bg)
+   ════════════════════════════════════════════ */
+#s5{
+  background:linear-gradient(100deg,
+    #f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,
+    #bcccd8 50%,#96b2c4 64%,
+    #7096ae 80%,#4d7090 100%);
+  align-items:flex-start;justify-content:flex-start;
+  padding:4.5% 8%;
+}
+.tm-hd{
+  font-size:clamp(7px,.9vw,9px);
+  letter-spacing:.38em;color:rgba(3,20,48,.45);
+  text-transform:uppercase;
+  animation:fi .2s ease .05s both;width:100%;
+  margin-bottom:2px;
+}
+.tm-sub{
+  font-size:clamp(9px,1.4vw,14px);
+  color:rgba(3,20,48,.55);
+  font-weight:300;letter-spacing:.02em;
+  margin-bottom:clamp(8px,1.5vw,14px);
+  animation:fi .3s ease .15s both;width:100%;
+}
+.tm-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  row-gap:0;
+  width:100%;
+  max-width:420px;
+}
+.tm-row{
+  display:flex;align-items:center;gap:8px;
+  padding:clamp(3.5px,.6vw,6px) 0;
+  border-bottom:1px solid rgba(3,20,48,.065);
+  opacity:0;transform:translateX(-9px);
+  transition:opacity .18s ease,transform .18s ease;
+}
+.tm-row.on{opacity:1;transform:translateX(0)}
+.tm-name{font-size:clamp(8px,1.05vw,10.5px);font-weight:600;color:#031430;flex:1}
+.tm-role{font-size:clamp(5.5px,.78vw,7.8px);color:rgba(3,20,48,.4);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+
+/* ════════════════════════════════════════════
+   S6 · THANKS  (gradient bg)
+   ════════════════════════════════════════════ */
+#s6{
+  background:linear-gradient(100deg,
+    #f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,
+    #bcccd8 50%,#96b2c4 64%,
+    #7096ae 80%,#4d7090 100%);
+}
+#s6 .ty{
+  font-size:clamp(13px,2.2vw,22px);font-weight:700;color:#031430;
+  text-align:center;animation:fu .3s ease .1s both;
+  text-shadow:0 1px 3px rgba(255,255,255,.3);
+}
+#s6 .ts{
+  font-size:clamp(8.5px,1.28vw,12.5px);font-weight:300;
+  color:rgba(3,20,48,.6);text-align:center;
+  margin-top:10px;animation:fu .3s ease .3s both;
+  line-height:1.75;
+  text-shadow:0 1px 2px rgba(255,255,255,.2);
+}
+#s6 .tq{
+  font-family:"Cormorant Garamond",serif;font-style:italic;
+  font-size:clamp(12px,1.82vw,18px);color:#031430;
+  text-align:center;margin-top:16px;opacity:.65;
+  animation:fu .3s ease .6s both;
+}
+#s6 .ht{
+  font-size:clamp(7.5px,1vw,10px);
+  color:rgba(3,20,48,.35);text-align:center;
+  margin-top:12px;letter-spacing:.06em;
+  animation:fi .5s ease .9s both;
+}
+
+/* ════════════════════════════════════════════
+   S7 · CLOSING  (white bg + simbolo "a" dinamico)
+   ════════════════════════════════════════════ */
+@keyframes sym-in{
+  from{opacity:0;transform:scale(2.2)}
+  to  {opacity:1;transform:scale(1)}
+}
+@keyframes sym-shrink{
+  from{opacity:1;transform:scale(1)}
+  to  {opacity:.9;transform:scale(.82)}
+}
+#s7{background:linear-gradient(100deg,#f8f9fb 0%,#edf1f6 18%,#d8e2ec 34%,#bcccd8 50%,#96b2c4 64%,#7096ae 80%,#4d7090 100%)}
+#s7 .sym{
+  height:clamp(64px,11vw,108px);width:auto;
+  border-radius:clamp(10px,1.8vw,18px);
+  animation:sym-in .45s cubic-bezier(.22,1,.36,1) .05s both;
+}
+#s7 .cl{
+  height:clamp(32px,5vw,50px);width:auto;
+  margin-top:clamp(10px,1.8vw,16px);
+  animation:fu .3s ease .55s both;
+}
+#s7 .ct{
+  font-size:clamp(7px,.92vw,9px);letter-spacing:.28em;
+  color:#4d7090;text-transform:uppercase;text-align:center;
+  margin-top:8px;font-weight:600;
+  animation:fi .4s ease .8s both;
+}
+#s7 .cu{
+  font-size:clamp(7.5px,1.05vw,10.5px);
+  color:rgba(3,20,48,.28);text-align:center;
+  margin-top:8px;letter-spacing:.04em;
+  animation:fi .5s ease 1s both;
+}
+
+/* ─── CONTROLS ─────────────────────────── */
+.cb{
+  position:absolute;bottom:0;left:0;right:0;
+  display:flex;align-items:center;gap:8px;
+  padding:5px 10px 6px;
+  background:rgba(3,20,48,.78);
+  z-index:100;backdrop-filter:blur(4px);
+}
+.pbr{flex:1;height:2px;background:rgba(255,255,255,.13);border-radius:1px;overflow:hidden;cursor:pointer}
+.pf{height:100%;background:#4d7090;width:0%;transition:width .06s linear;pointer-events:none}
+.btn2{
+  background:none;border:1px solid rgba(255,255,255,.18);
+  color:rgba(255,255,255,.5);width:22px;height:22px;border-radius:50%;
+  cursor:pointer;font-size:8px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.btn2:hover{background:rgba(255,255,255,.08)}
+.td{color:rgba(255,255,255,.28);font-size:8.5px;font-family:monospace;min-width:32px;text-align:right}
+
+/* ─── SCENE STRIP ───────────────────────── */
+.strip{
+  width:min(900px,98vw);
+  display:flex;justify-content:space-between;
+  padding:5px 2px 0;
+}
+.sl{font-size:7.5px;color:rgba(255,255,255,.18);text-align:center;flex:1;letter-spacing:.04em;transition:color .2s}
+.sl.cur{color:#8aaabf}
+</style>
+</head>
+<body>
+
+<div class="F" id="F">
+
+  <!-- S1 APERTURA -->
+  <div class="sc" id="s1">
+    <div class="left">
+      <img class="logo-w" src="images/logo-color.png" alt="Ant Capital">
+      <div style="height:1px;background:#4d7090;width:0;max-width:55px;animation:lw .5s ease .7s both;--w:55px"></div>
+      <div class="sub1">Investment Banking · M&amp;A</div>
+    </div>
+    <div class="right">
+      <div class="n10">10</div>
+      <div class="range">2016 &mdash; 2026</div>
+    </div>
+  </div>
+
+  <!-- S2 CLAIM -->
+  <div class="sc" id="s2">
+    <div class="s2-l1">Ten years</div>
+    <div class="s2-l2">supporting companies,</div>
+    <div class="s2-l3">entrepreneurs and investors.</div>
+  </div>
+
+  <!-- S3 DEAL CONCLUSI -->
+  <div class="sc" id="s3">
+    <div class="dc-hd">Our Deals</div>
+    <div class="dc-grid" id="dcg"></div>
+    <div class="dc-foot" id="dcf">
+      <span class="dc-sub">A decade of experience. Ready for the next transactions.</span>
+    </div>
+  </div>
+
+  <!-- S5 TEAM -->
+  <div class="sc" id="s5">
+    <div class="tm-hd">Thanks to our team</div>
+    <div class="tm-sub">for their commitment and professionalism.</div>
+    <div class="tm-grid" id="tmg"></div>
+  </div>
+
+  <!-- S7 CLOSING -->
+  <div class="sc" id="s7">
+    <img class="sym" src="Loghi/Simbolo_Ant-Capital.png" alt="Ant Capital">
+    <img class="cl" src="images/logo-color.png" alt="Ant Capital">
+    <div class="cu">antcapital.it</div>
+  </div>
+
+  <!-- Controls -->
+  <div class="cb">
+    <button class="btn2" id="pb" onclick="tp()">&#9654;</button>
+    <div class="pbr" id="pbr" onclick="sk(event)"><div class="pf" id="pf"></div></div>
+    <button class="btn2" onclick="rs()">&#8635;</button>
+    <div class="td" id="td">0:00</div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="sl" data-i="0">Apertura</div>
+  <div class="sl" data-i="1">Claim</div>
+  <div class="sl" data-i="2">Deal</div>
+  <div class="sl" data-i="3">Team</div>
+  <div class="sl" data-i="4">Chiusura</div>
+</div>
+
+<script>
+const TOT=16;
+const SC=[
+  {id:"s1",s:0, e:2 },
+  {id:"s2",s:2, e:4 },
+  {id:"s3",s:4, e:8 },
+  {id:"s5",s:8, e:12},
+  {id:"s7",s:12,e:16},
+];
+
+// ── Deal data ────────────────────────────────
+const DEALS=[
+  ["Dream Flower / Xerjoff","M&A","2025"],
+  ["Venpa / Euronoleggi","M&A","2025"],
+  ["Quantyca / Jakala","M&A","2025"],
+  ["Parallelozero / Valica","M&A","2024"],
+  ["Private Investors / Slitti","M&A","2022"],
+  ["Lombarda Acciai","M&A","2021"],
+  ["Beintoo / Mediaset","M&A","2020"],
+  ["Univergomma / Overgom","M&A","2019"],
+  ["Flema / Bridgestone","M&A","2018"],
+  ["Univergomma / Maxtyre","M&A","2018"],
+  ["Futuris / Motus Energy","M&A","2018"],
+  ["Innovando / Dafne","M&A","2017"],
+  ["Portale Sardegna","M&A","2016"],
+  ["La Murrina Group","Financial","2016"],
+  ["Rubber Conversion","Financial","2018"],
+  ["Vibrowest","Financial","2017"],
+  ["Delta Contract","Financial","2016"],
+  ["Zonca International","Financial","2016"],
+  ["La Murrina Murano","Debt","2016"],
+  ["Danielli","Debt","2016"],
+  ["SFE","Debt","2016"],
+  ["Supermercato24","IPO / PP","2016"],
+];
+
+// Build deal grid
+const dcg=document.getElementById("dcg");
+DEALS.forEach(([n,t,y])=>{
+  const r=document.createElement("div");
+  r.className="dc-row";
+  r.innerHTML=`<span class="dc-yr">${y}</span><span class="dc-name">${n}</span><span class="dc-badge">${t}</span>`;
+  dcg.appendChild(r);
+});
+
+// ── Team data ────────────────────────────────
+const TEAM=[
+  ["Antonio Urselli","Managing Director"],
+  ["Filippo Privitera","Non Exec. Partner"],
+  ["Daniele Sabato","Non Exec. Partner"],
+  ["Stefano De Pascale","Director"],
+  ["Alessandro Serati","Associate"],
+  ["Sergiu Denis Lazar","Analyst"],
+  ["Luca Gennaro","Analyst"],
+  ["Mauro Brunelli","Senior Advisor"],
+  ["Gherardo Laffineur Petracchini","Advisory Board"],
+  ["Giovanni Grasso","Advisory Board"],
+  ["Ginevra Boiocchi","Office Manager"],
+];
+
+// Build team grid
+const tmg=document.getElementById("tmg");
+TEAM.forEach(([n,r])=>{
+  const row=document.createElement("div");
+  row.className="tm-row";
+  row.innerHTML=`<span class="tm-name">${n}</span><span class="tm-role">${r}</span>`;
+  tmg.appendChild(row);
+});
+
+// ── Animation triggers ───────────────────────
+let cur=-1, t=0, playing=false, iv=null;
+const timers=[];
+function clrAll(){timers.forEach(clearTimeout);timers.length=0}
+
+function trigDeals(){
+  clrAll();
+  const rows=document.querySelectorAll(".dc-row");
+  const foot=document.getElementById("dcf");
+  rows.forEach(r=>r.classList.remove("on"));
+  foot.classList.remove("on");
+  rows.forEach((r,i)=>timers.push(setTimeout(()=>r.classList.add("on"), 30+i*75)));
+  timers.push(setTimeout(()=>foot.classList.add("on"), 30+rows.length*75+120));
+}
+
+function trigTeam(){
+  clrAll();
+  const rows=document.querySelectorAll(".tm-row");
+  rows.forEach(r=>r.classList.remove("on"));
+  rows.forEach((r,i)=>timers.push(setTimeout(()=>r.classList.add("on"), 30+i*85)));
+}
+
+function setScene(idx){
+  if(idx===cur)return;
+  SC.forEach((s,i)=>document.getElementById(s.id).classList.toggle("on",i===idx));
+  document.querySelectorAll(".sl").forEach(el=>el.classList.toggle("cur",+el.dataset.i===idx));
+  cur=idx;
+  if(idx===2)trigDeals();
+  if(idx===3)trigTeam();
+}
+
+function ui(){
+  document.getElementById("pf").style.width=(t/TOT*100)+"%";
+  document.getElementById("td").textContent="0:"+String(Math.floor(t)).padStart(2,"0");
+  let idx=-1;
+  for(let i=0;i<SC.length;i++) if(t>=SC[i].s&&t<SC[i].e){idx=i;break;}
+  if(t>=TOT)idx=SC.length-1;
+  setScene(idx);
+}
+function tick(){
+  if(!playing)return;
+  t+=0.05;
+  if(t>=TOT){t=TOT;ui();stop();return;}
+  ui();
+}
+function stop(){
+  playing=false;clearInterval(iv);
+  document.getElementById("pb").innerHTML="&#9654;";
+}
+function tp(){
+  if(playing){stop();return;}
+  if(t>=TOT)t=0;
+  playing=true;
+  document.getElementById("pb").innerHTML="&#9646;&#9646;";
+  iv=setInterval(tick,50);
+}
+function rs(){
+  stop();t=0;cur=-1;clrAll();
+  document.querySelectorAll(".dc-row,.tm-row").forEach(el=>el.classList.remove("on"));
+  document.getElementById("dcf").classList.remove("on");
+  ui();
+}
+function sk(e){
+  const r=document.getElementById("pbr").getBoundingClientRect();
+  t=Math.max(0,Math.min(TOT,((e.clientX-r.left)/r.width)*TOT));
+  cur=-1;clrAll();ui();
+}
+
+ui();
+setTimeout(tp,400);
+</script>
+</body>
+</html>
