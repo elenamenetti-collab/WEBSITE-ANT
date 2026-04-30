@@ -331,7 +331,7 @@ body.sidebar-open { overflow: hidden; }
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 36px 48px 32px;
+  padding: 36px 48px 36px;
   aspect-ratio: 3 / 4;
 }
 
