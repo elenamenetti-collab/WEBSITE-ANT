@@ -341,7 +341,7 @@ body.sidebar-open { overflow: hidden; }
   align-items: center;
   gap: 10px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 .dc-type {
@@ -413,7 +413,7 @@ body.sidebar-open { overflow: hidden; }
   color: #031430;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0 0 12px;
+  margin: 0 0 20px;
 }
 
 /* ===========================
