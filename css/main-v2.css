@@ -283,6 +283,7 @@ body.sidebar-open { overflow: hidden; }
   border: none;
   box-shadow: none;
   border-right: 1px solid rgba(3,20,48,0.09);
+  border-bottom: 1px solid rgba(3,20,48,0.09);
   background: transparent;
   padding: 0;
 }
