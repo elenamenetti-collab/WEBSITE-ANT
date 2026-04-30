@@ -412,7 +412,7 @@ body.sidebar-open { overflow: hidden; }
   color: #031430;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 12px;
 }
 
 /* ===========================
